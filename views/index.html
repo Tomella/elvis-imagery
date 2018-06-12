@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en-us" id="ng-app" ng-app="ImageryApp">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Imagery - Foundation Spatial Data</title>
+    <meta charset="utf-8">
+	<link rel="icon" type="image/png" href="icsm/resources/img/SiteFavIcon.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Geoscience Australia">
+    <meta name="version" content="BUILD-VERSION">
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" crossorigin="anonymous">
+    <link href="//cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" rel="stylesheet" />
+
+    <link href="icsm/resources/css/ga.css" rel="stylesheet" />
+    <link href="icsm/resources/css/app.header.footer.css?v=VERSION_NO" rel="stylesheet" />
+	<link href="icsm/resources/css/mars.css?v=VERSION_NO" rel="stylesheet" />
+
+	<link href="icsm/bower_components/explorer-ui-components/dist/ga-explorer-ui.css" rel="stylesheet" />
+	<link href="icsm/bower_components/bg-splitter/css/style.css" rel="stylesheet" />
+	<link href="icsm/bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="icsm/bower_components/leaflet-draw/dist/leaflet.draw.css" rel="stylesheet" />
+	<link href="icsm/bower_components/ga-explorer-map-components/dist/vendor/leaflet-locationfilter/locationfilter.css" rel="stylesheet" />
+	<link href="icsm/bower_components/ga-explorer-map-components/dist/vendor/leaflet-measurecontrol/leaflet.measurecontrol.css" rel="stylesheet" />
+	<link href="icsm/bower_components/ga-explorer-map-components/dist/ga-explorer-map.css" rel="stylesheet" />
+	<link href='icsm/bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.css' rel="stylesheet" />
+   <link rel="stylesheet" href="icsm/bower_components/ang-accordion/css/ang-accordion.css">
+
+
+	<link href="icsm/assets/icsm.css?v=VERSION_NO" rel="stylesheet"/>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1501753-1', 'ga.gov.au');
+
+ga('send', 'pageview');
+</script>
+
+<body ng-controller="RootCtrl as root">
+
+<!--[if lt IE 9]>
+<div style="margin-right:100px; position:absolute; top:0">
+<style>
+.navbar {
+	display:none!important;
+}
+</style>
+<p>
+<img src="icsm/resources/css/images/geoscience_inline_padded_small.png" style="float:left;padding-right:10px;" />
+<br/>
+<strong>Imagery - browser requirements.</strong><br/>
+Unfortunately this application requires a browser made more recently than what you are using. We will not be providing a lower spec
+version of this application. The latest Firefox, Chrome plus Microsoft Internet Explorer 9 and higher including Edge browsers have been tested to work as of mid-2015.
+</div>
+<![endif]-->
+
+<!-- BEGIN: Sticky Header -->
+<div icsm-header class="navbar navbar-default navbar-fixed-top"
+         current="'satellite'"
+			heading="'Imagery - Foundation Spatial Data'"
+			headingtitle="'Imagery - Foundation Spatial Data'"
+			breadcrumbs="[{name:'Imagery', title: 'Reload Imagery - Foundation Spatial Data', url: '.'}]"
+			helptitle="'Get help about Imagery - Foundation Spatial Data'"
+			helpalttext="'Get help about Imagery - Foundation Spatial Data'">
+</div>
+<!-- END: Sticky Header -->
+
+
+<!-- Messages go here. They are fixed to the tab bar. -->
+<div explorer-messages class="marsMessages noPrint"></div>
+
+<!-- BEGIN: Page Content -->
+
+<elevation-toolbar></elevation-toolbar>
+
+<!-- BEGIN: Page Content -->
+<side-panel-left style="z-index: 2"></side-panel-left>
+
+<side-panel-right-oppose>
+   <imagery-panes data="root.data" default-item="download"></imagery-panes>
+</side-panel-right-oppose>
+
+<side-panel-right style="z-index: 2"></side-panel-right>
+
+
+<div icsm-contributors></div>
+<div path-elevation-plot class="noPrint elevationFixedBottom"></div>
+
+<icsm-mapevents icsm-bounds></icsm-mapevents>
+
+<div icsm-splash class="noPrint"></div>
+<icsm-mapevents icsm-bounds></icsm-mapevents>
+
+<div explorer-flash class="noPrint"></div>
+<!-- END: Page Content -->
+
+<!-- BEGIN: Sticky Footer -->
+<div page-footer style="z-index:5; " class="noPrint"></div>
+<!-- END: Sticky Footer -->
+
+
+<div class="wizardPopup" wizard-popup ng-class="{'wizardPopup':data.item, wizardHide: !data.item}" ng-controller="DownloadCtrl as dl"></div>
+<iframe id="launcher" style="height:0;display:none"></iframe>
+
+	<script src="https://maps.googleapis.com/maps/api/js?client=gme-geoscienceaustralia&v=3&language=en&libraries=places"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!--[if IE 9 ]>    <script src="assets/placeholder/placeholders.jquery.min.js"></script> <![endif]-->
+
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+	<script src="//cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+	<script src="//cdn.jsdelivr.net/leaflet.esri/1.0.0/esri-leaflet.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.11/angular.min.js"></script>
+  	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.11/angular-animate.min.js"></script>
+  	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.11/angular-route.min.js"></script>
+  	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.11/angular-sanitize.min.js"></script>
+  	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.11/angular-aria.min.js"></script>
+  	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.11/angular-messages.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap-tpls.min.js"></script>
+
+   <script src="icsm/bower_components/ngAutocomplete/src/ngAutocomplete.js"></script>
+	<script src="icsm/bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js"></script>
+   <script src="icsm/bower_components/leaflet-draw/dist/leaflet.draw.js"></script>
+   <script src="icsm/bower_components/ga-explorer-map-components/dist/vendor/leaflet-locationfilter/locationfilter.js"></script>
+   <script src="icsm/bower_components/ga-explorer-map-components/dist/vendor/leaflet-plotter/leaflet-plotter.js"></script>
+   <script src="icsm/bower_components/ga-explorer-map-components/dist/vendor/leaflet-measurecontrol/leaflet.measurecontrol.js"></script>
+   <script src="icsm/bower_components/ga-explorer-map-components/dist/ga-explorer-map.js"></script>
+	<script src="icsm/bower_components/explorer-ui-components/dist/ga-explorer-ui.js"></script>
+   <script src="icsm/bower_components/ang-accordion/js/ang-accordion.js"></script>
+   <script src="icsm/bower_components/x2js/xml2json.min.js"></script>
+
+	<!-- These are the "ICSM" specific includes of modules -->
+	<script src="icsm/assets/common.js?v=VERSION_NO"></script>
+	<script src="icsm/assets/imagery.js?v=VERSION_NO"></script>
+</body>
+</html>

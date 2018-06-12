@@ -1,0 +1,162 @@
+{
+   "wizardState": {
+     "popup": "hide"
+   },
+   "map":{
+   	  "name" : "main",
+      "options":{
+      	 "maxBounds" : [[-48, 106],[-6, 159]],
+         "center":[-28, 140],
+         "minZoom":4,
+         "zoom":4
+      },
+      "position":{
+         "bounds":[
+            [-44, 117],
+            [-12, 146]
+         ],
+         "minZoom":13
+      },
+      "layers":[
+         {
+            "name":"Google Hybrid",
+            "type":"Google",
+            "parameters":["HYBRID"],
+            "defaultLayer":true,
+            "isBaselayer":true,
+            "visible":true
+         },
+         {
+            "name":"Australian Topography",
+            "pseudoBaseLayer" : true,
+            "type":["TileLayer"],
+            "key":"topography",
+            "parameters":[
+                "http://services.ga.gov.au/gis/rest/services/NationalMap_Colour_Topographic_Base_World_WM/MapServer/tile/{z}/{y}/{x}",
+                {
+                   "layers" : "Image",
+                   "format" : "image/png",
+                   "transparent" : true,
+                   "opacity" : 0.7
+                }
+            ],
+            "addLayerControl":false,
+            "visible":true
+         },
+         {
+         	"description" : "placeholder for layers above the topography",
+         	"name" : "Elevation",
+         	"type" : "LayerGroup",
+         	"layers": []
+         },
+         {
+         	"description" : "placeholder for layers above the map layers",
+         	"name" : "Search Layers",
+         	"type" : "LayerGroup",
+         	"layers": []
+         },
+         {
+         	"description" : "placeholder for layers above the search layers",
+         	"name" : "Download Layers",
+         	"type" : "LayerGroup",
+         	"layers": []
+         }
+      ],
+      "drawOptions" : {
+      	 "draw" : {
+      		"polygon" : false,
+      		"circle" : false,
+      		"marker" : false,
+      		"rectangle" : false
+      	 },
+      	 "edit" : false
+      }
+   },
+   "layersTab" : {
+   		"group" : "Elevation",
+   		"title" : "Layers",
+   		"layers" : [
+   			{
+                "name":"Flow grid direction image",
+                "help" : "Best viewed at state to local area zoom levels.",
+                "metadata" : "http://www.ga.gov.au/thredds/wms/national_grids/d8-9s.nc?request=GetCapabilities&service=WMS",
+                "pseudoBaseLayer" : true,
+                "type":["TileLayer", "WMS"],
+                "key":"gravity",
+                "parameters":[
+                    "http://www.ga.gov.au/thredds/wms/national_grids/d8-9s.nc",
+                    {
+                       "layers" : "Flow_Direction_Grid_to_accompany_9_Second_Digital_Elevation_Model_of_Australia_Version_3",
+                       "format" : "image/png",
+                       "transparent" : true,
+                       "opacity" : 0.5
+                    }
+                ],
+                "addLayerControl":false,
+                "visible":true
+            },
+   			{
+                "name":"Elevation contours",
+                "help" : "Detail improves as you zoom into an area but disappears when zoomed to tightly",
+                "metadata" : "http://www.ga.gov.au/gis/rest/services/topography/Dynamic_National_Map_Elevation_Relief_and_Physiography/MapServer",
+                "pseudoBaseLayer" : true,
+                "type":["TileLayer", "WMS"],
+                "key":"gravity",
+                "parameters":[
+                    "http://www.ga.gov.au/gis/services/topography/Dynamic_National_Map_Elevation_Relief_and_Physiography/MapServer/WMSServer",
+                    {
+                       "layers" : "Contours_Labels,Contours_250K_Scale,Contours_2_5Million_Scale,No_Data",
+                       "format" : "image/png",
+                       "transparent" : true
+                    }
+                ],
+                "addLayerControl":false,
+                "visible":true
+            },
+   			{
+                "name":"Spot elevations",
+                "help" : "Detail improves as you zoom into an area but disappears when zoomed to tightly",
+                "metadata" : "http://www.ga.gov.au/gis/rest/services/topography/Dynamic_National_Map_Elevation_Relief_and_Physiography/MapServer",
+                "pseudoBaseLayer" : true,
+                "type":["TileLayer", "WMS"],
+                "key":"gravity",
+                "parameters":[
+                    "http://www.ga.gov.au/gis/services/topography/Dynamic_National_Map_Elevation_Relief_and_Physiography/MapServer/WMSServer",
+                    {
+                       "layers" : "Spot_Elevations_Labels,Spot_Elevations_250K_Scale,Spot_Elevations_2_5Million_Scale",
+                       "format" : "image/png",
+                       "transparent" : true
+                    }
+                ],
+                "addLayerControl":false,
+                "visible":true
+            }
+   		]
+   },
+   	"facets" :{
+		"defaultKeywords" : [
+			{
+				"keyword" : "ECOLOGY Landscape",
+				"name" : "ECOLOGY Landscape",
+				"description" : "ECOLOGY Landscape",
+                "default" : true,
+                "hide" : true
+			},
+			{
+				"keyword" : "LAND Topography Models",
+				"name" : "LAND Topography Models",
+				"description" : "LAND Topography Models",
+				"info":"",
+                "default" : true,
+                "hide" : true
+			}
+		],
+		"keywordMappedDescription" :"The entries look the same as the default keywords but there but doesn't need the default attribute or at least it should be false",
+		"keywordMapped": []
+	},
+
+	"processing": {
+		"intersectsUrl1": "icsm/resources/config/response.json",
+      "intersectsUrl": "https://elvis-ga.fmecloud.com/fmedatastreaming/dev_space/LPI_ReturnDownloadables.fmw?ymin={miny}&ymax={maxy}&xmin={minx}&xmax={maxx}"
+	}
+}

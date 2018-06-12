@@ -1,0 +1,11 @@
+<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right noPrint" ng-attr-style="width:{{right.width}}" ng-class="{'cbp-spmenu-open': right.active}">
+    <a href="" title="Close panel" ng-click="closePanel()" style="z-index: 1">
+        <span class="glyphicon glyphicon-chevron-right pull-left"></span>
+    </a>
+
+    <div class="right-side-menu-container" ng-show="right.active === 'download'" icsm-view></div>
+    <div class="right-side-menu-container" ng-show="right.active === 'maps'" icsm-maps></div>
+    <div class="right-side-menu-container" ng-show="right.active === 'glossary'" icsm-glossary></div>
+    <div class="right-side-menu-container" ng-show="right.active === 'help'" icsm-help></div>
+    <panel-close-on-event only-on="search" event-name="clear.button.fired"></panel-close-on-event>
+</div>

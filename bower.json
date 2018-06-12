@@ -1,0 +1,41 @@
+{
+  "name": "imagery",
+  "version": "0.1.0",
+  "description": "Imagery",
+  "keywords": [
+    "icsm",
+    "imagery",
+    "data"
+  ],
+  "directory": "dist/icsm/bower_components",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "license": "https://raw.githubusercontent.com/Tomella/elvis-imagery/master/LICENSE",
+  "dependencies": {
+    "ga-explorer-map-components": "https://github.com/Tomella/explorer-map-components.git#master",
+    "explorer-ui-components": "https://github.com/Tomella/explorer-ui-components.git#master",
+    "explorer-search-components": "https://github.com/Tomella/explorer-search-components.git",
+    "angular": "~1.4.12",
+    "components-font-awesome": "~4.6.0",
+    "bg-splitter": "*",
+    "angular-bootstrap": "^1.3.3",
+    "seiyria-bootstrap-slider": "^7.1.1",
+    "ngAutocomplete": "^1.0.0",
+    "ang-accordion": "*",
+    "x2js": "x2js#^1.2.0",
+    "leaflet-draw": "^0.3.2",
+    "ngInfiniteScroll": "1.0.0",
+    "babel-polyfill": "^0.0.1",
+    "angular-recaptcha": "^4.1.5"
+  },
+  "resolutions": {
+    "angular": "~1.4.12",
+    "leaflet-draw": "~0.3.2",
+    "leaflet": "^1.2.0"
+  }
+}

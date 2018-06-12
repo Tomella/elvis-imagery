@@ -1,0 +1,47 @@
+.radCore {
+	margin-right: 3px;
+	display:inline-block;
+}
+
+.searchBar {
+	width:27em;
+	opacity:0.9;
+}
+
+@media only screen and (max-width:1100px) {
+	.searchBar {
+		width:23em;
+	}
+}
+
+
+@media only screen and (max-width:1025px) {
+	.searchBar {
+		width:20em;
+	}
+}
+
+
+@media only screen and (max-width:645px) {
+	.searchBar {
+		display:none;
+	}
+}
+
+@media only screen and (max-width:965px) {
+	.radCore, .hideWhenSmall, .steps-indicator, .secondToolbarInfo {
+		display:none;
+	}
+}
+
+div.leaflet-control-scale-line {
+	text-align:center;
+}
+
+
+
+@media only screen and (max-width:965px) {
+	div.leaflet-control-scale-line {
+		display:none;
+	}
+}

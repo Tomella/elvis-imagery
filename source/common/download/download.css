@@ -1,0 +1,51 @@
+.wizardPopup {
+	position:fixed;
+	top:20px;
+	right:15px;
+	width:40%;
+	z-index:5;
+}
+
+.wizardHide {
+	display:none;
+}
+
+.downloadInner {
+	max-height:800px;
+	overflow-y:auto;
+   overflow-x: hidden;
+}
+
+.abstractContainer {
+	max-height:400px;
+	overflow-y:auto;
+	padding-left:0px;
+	padding-right:0px;
+}
+
+
+@media only screen and (max-height:1024px) {
+	.downloadInner {
+		max-height: 700px;
+	}
+
+	.abstractContainer {
+		max-height:320px;
+	}
+}
+
+@media only screen and (max-height:786px) {
+	.downloadInner {
+		max-height: 500px;
+	}
+
+	.abstractContainer {
+		max-height:120px;
+	}
+}
+
+@media only screen and (max-height:600px) {
+	.downloadInner {
+		max-height: 350px;
+	}
+}

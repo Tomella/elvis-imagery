@@ -1,0 +1,31 @@
+<div class="elevation-toolbar noPrint">
+   <div class="toolBarContainer">
+      <div>
+         <ul class="left-toolbar-items">
+            <div class="btn-group searchBar" ng-show="root.whichSearch != 'region'">
+               <div class="input-group input-group-custom" geo-search >
+                  <input type="text" ng-autocomplete ng-model="values.from.description" options='{country:"au"}' size="32" title="Select a locality to pan the map to."
+                     class="form-control" aria-label="...">
+                  <div class="input-group-btn">
+                     <button ng-click="zoom(false)" exp-ga="['send', 'event', 'icsm', 'click', 'zoom to location']" class="btn btn-default" title="Pan and potentially zoom to location.">
+                        <i class="fa fa-search"></i>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </ul>
+         <ul class="right-toolbar-items">
+            <li>
+               <panel-trigger panel-id="download" panel-width="590px" name="Download" default="default" icon-class="fa-list" title="Select an area of interest and select datasets for download"></panel-trigger>
+            </li>
+            <li>
+               <panel-trigger panel-id="help" panel-width="590px" name="Help" icon-class="fa-question-circle-o" title="Show help"></panel-trigger>
+            </li>
+            <li>
+               <panel-trigger panel-id="glossary" panel-width="590px" name="Glossary" icon-class="fa-book" title="Show glossary"></panel-trigger>
+            </li>
+            <li reset-page></li>
+         </ul>
+      </div>
+   </div>
+</div>

@@ -1,0 +1,324 @@
+{
+   "group": {
+      "primaryId": "vect01",
+      "title": "Surface Hydrology",
+      "showExtent": true,
+      "bbox":"112.8 -44.0 154.1 -8.9",
+      "tileCache": "http://services.ga.gov.au/site_1/services/Surface_Hydrology_WM/MapServer/WMSServer",
+      "tileCacheOptions": {
+         "type": "WMS",
+			"format": "image/png",
+			"transparent": true,
+         "layers": "Surface_HydroPoints_National,Surface_HydroPolys_National,Surface_HydroLines_National,Surface_HydroPoints_Regional,Surface_HydroPolys_Regional,Surface_HydroLines_Regional"
+      },
+      "spatial": {
+         "westLongitude": 112.85,
+         "eastLongitude": 154.1,
+         "northLatitude": -8.9,
+         "southLatitude": -44.0,
+         "valid": true,
+         "closed": true,
+         "allNull": false
+      },
+      "bounds": {
+         "xMax": 154.1,
+         "xMin": 112.8,
+         "yMax": -8.9,
+         "yMin": -44
+      },
+      "docs": [
+         {
+            "showPolygon": false,
+            "selected": true,
+            "key": "SR-1a89e517c3ff5c9315aa81ae38879e28",
+            "sourceSystemCode": "gcat",
+            "sysId": "gcat_1186e898-14b5-812e-e053-10a3070a76f0",
+            "primaryId": "1186e898-14b5-812e-e053-10a3070a76f0",
+            "dcUris": [
+               {
+                  "protocol": "null",
+                  "value": "https://d28rz98at9flks.cloudfront.net/83107/SurfaceHydrologyLinesRegional.gdb.zip",
+                  "name": "File download",
+                  "description": "Download the data (gdb)"
+               }
+            ],
+            "code": "HydroLines",
+            "title": "HydroLines",
+            "metadataLink": "https://ecat.ga.gov.au/geonetwork/srv/eng/search#!1186e898-14b5-812e-e053-10a3070a76f0/Surface+Hydrology+Lines+%28Regional%29",
+            "abstract": "The Surface Hydrology Lines (Regional) dataset provides a set of related features classes to be used as the basis of the production of consistent hydrological information.  This dataset contains a geometric representation of major hydrographic line elements - both natural and artificial.   This dataset is the best available data supplied by Jurisdictions and aggregated by Geoscience Australia.  It is intended for defining hydrological features with attributes.",
+            "listOfKeywords": null,
+            "date": null,
+            "licence": "license, license",
+            "supportedService": false,
+            "thumbnail": false,
+            "downloads": false,
+            "spatial": {
+               "westLongitude": 112.8,
+               "eastLongitude": 154.1,
+               "northLatitude": -8.9,
+               "southLatitude": -44.0,
+               "valid": true,
+               "closed": true,
+               "allNull": false
+            }
+         },
+         {
+            "showPolygon": false,
+            "selected": true,
+            "key": "SR-5350ab1c78f33ad0e3cf45da0777968a",
+            "sourceSystemCode": "gcat",
+            "sysId": "gcat_123f4803-04d7-32d1-e053-12a3070a99ac",
+            "primaryId": "123f4803-04d7-32d1-e053-12a3070a99ac",
+            "dcUris": [
+               {
+                  "protocol": "null",
+                  "value": "https://d28rz98at9flks.cloudfront.net/83132/SurfaceHydrologyPointsRegional.gdb.zip",
+                  "name": "File download",
+                  "description": "Download the data (gdb)"
+               }
+            ],
+            "code": "HydroPoints",
+            "title": "HydroPoints",
+            "metadataLink": "https://ecat.ga.gov.au/geonetwork/srv/eng/search#!123f4803-04d7-32d1-e053-12a3070a99ac/Surface+Hydrology+Points+%28Regional%29",
+            "abstract": "The Surface Hydrology Points (Regional) dataset provides a set of related features classes to be used as the basis of the production of consistent hydrological information.  This dataset contains a geometric representation of major hydrographic point elements - both natural and artificial.   This dataset is the best available data supplied by Jurisdictions and aggregated by Geoscience Australia it is intended for defining hydrological features.",
+            "listOfKeywords": null,
+            "date": null,
+            "licence": "license, license",
+            "supportedService": false,
+            "thumbnail": false,
+            "downloads": false,
+            "spatial": {
+               "westLongitude": 112.8,
+               "eastLongitude": 154.1,
+               "northLatitude": -8.9,
+               "southLatitude": -44.0,
+               "valid": true,
+               "closed": true,
+               "allNull": false
+            }
+         },
+         {
+            "showPolygon": false,
+            "selected": true,
+            "key": "SR-45dcc3b953c16b26b615d73275a69adc",
+            "sourceSystemCode": "gcat",
+            "sysId": "gcat_12777e32-ec4f-055a-e053-10a3070a2ce2",
+            "primaryId": "12777e32-ec4f-055a-e053-10a3070a2ce2",
+            "dcUris": [
+               {
+                  "protocol": "null",
+                  "value": "https://d28rz98at9flks.cloudfront.net/83134/SurfaceHydrologyPolygonsRegional.gdb.zip",
+                  "name": "File download",
+                  "description": "Download the data (gdb)"
+               }
+            ],
+            "code": "HydroPolygons",
+            "title": "HydroPolygons",
+            "metadataLink": "https://ecat.ga.gov.au/geonetwork/srv/eng/search#!12777e32-ec4f-055a-e053-10a3070a2ce2/Surface+Hydrology+Polygons+%28Regional%29",
+            "abstract": "The Surface Hydrology polygon (Regional) dataset provides a set of related features classes to be used as the basis of the production of consistent hydrological information.  This dataset contains a geometric representation of major hydrographic polygon elements - both natural and artificial.   This dataset is the best available data supplied by Jurisdictions and aggregated by Geoscience Australia.  It is intended for defining hydrological features wtih attributes.",
+            "listOfKeywords": null,
+            "date": null,
+            "licence": "license, license",
+            "supportedService": false,
+            "thumbnail": false,
+            "downloads": false,
+            "spatial": {
+               "westLongitude": 112.8,
+               "eastLongitude": 154.1,
+               "northLatitude": -8.9,
+               "southLatitude": -44.0,
+               "valid": true,
+               "closed": true,
+               "allNull": false
+            }
+         }
+      ]
+   },
+   "serviceUrlTemplate": "https://elvis-ga.fmecloud.com/fmejobsubmitter/fsdf_water/ClipZipShip_Water_Master.fmw?geocat_number={id}&features_selected={features_selected}&division_name={division_name}&river_reg_name={river_reg_name}&ymin={ymin}&ymax={ymax}&xmin={xmin}&xmax={xmax}&file_name={filename}&file_format_vector={outFormat}&file_format_raster=null&coord_sys={outCoordSys}&email_address={email}&opt_showresult=false&opt_servicemode=async",
+   "refData": {
+      "rasterFileFormat": [
+         {
+            "code": "ESRIASCIIGRID",
+            "value": "Esri ASCII Grid",
+            "description": "An Esri ASCII grid is a raster GIS file format developed by Esri. The grid defines geographic space as an array of equally sized square grid points arranged in rows and columns. Each grid point stores a numeric value that represents elevation or surface slope for that unit of space. Each grid cell is referenced by its x,y coordinate location."
+         },
+         {
+            "code": "GEOTIFF",
+            "value": "Geo TIFF (Geo-referenced Tagged Image File Format)",
+            "description": "GeoTIFF is a public domain metadata standard which allows georeferencing information to be embedded within a TIFF file."
+         },
+         {
+            "code": "NGRID",
+            "value": "MapInfo Vertical Mapper Grid (NGrid)",
+            "description": "NGrid is a binary raster format with header information. For each raster, there is only a single feature returned, since this feature will contain the entire raster. A single feature is stored in a single file, with header information in an associated MapInfo TAB file."
+         }
+      ],
+      "vectorFileFormat": [
+         {
+            "value": "Esri Shapefile",
+            "code": "ESRISHAPE",
+				"description" : "The shapefile format is a popular geospatial vector data format for geographic information system (GIS) software. It is developed and regulated by Esri as a (mostly) open specification for data interoperability among Esri and other GIS software products."
+         },
+         {
+            "value": "Esri Geodatabase",
+            "code": "FILEGDB",
+				"description" : "At its most basic level, an ArcGIS geodatabase is a collection of geographic datasets of various types held in a common file system folder"
+         },
+         {
+            "value": "Bentley MicroStation",
+            "code": "DGNV8",
+				"description" : "MicroStation is a CAD software product for two and three dimensional design and drafting, developed and sold by Bentley Systems."
+         },
+         {
+            "value": "Mapinfo TAB",
+            "code": "MITAB",
+				"description" : "The MapInfo TAB format is a popular geospatial vector data format for geographic information systems software. It is developed and regulated by MapInfo Corporation as a proprietary format."
+         },
+         {
+            "value": "Google KML",
+            "code": "OGCKML",
+				"description" : "KML is a file format used to display geographic data in an Earth browser such as Google Earth."
+         }
+      ],
+      "outCoordSys": [
+         {
+            "code": "AUS-LM-CONIC",
+            "value": "Lambert Conformal Conic for Australia, WGS84"
+         },
+         {
+            "code": "EPSG:28348",
+            "value": "Map Grid of Australia Zone 48 (GDA 94)",
+            "extent": {
+               "xMax": 108,
+               "xMin": 102,
+               "yMax": -8,
+               "yMin": -56
+            }
+         },
+         {
+            "code": "EPSG:28349",
+            "value": "Map Grid of Australia Zone 49 (GDA 94)",
+            "extent": {
+               "xMax": 114,
+               "xMin": 108,
+               "yMax": -8,
+               "yMin": -56
+            }
+         },
+         {
+            "code": "EPSG:28350",
+            "value": "Map Grid of Australia Zone 50 (GDA 94)",
+            "extent": {
+               "xMax": 120,
+               "xMin": 114,
+               "yMax": -8,
+               "yMin": -56
+            }
+         },
+         {
+            "code": "EPSG:28351",
+            "value": "Map Grid of Australia Zone 51 (GDA 94)",
+            "extent": {
+               "xMax": 126,
+               "xMin": 120,
+               "yMax": -8,
+               "yMin": -56
+            }
+         },
+         {
+            "code": "EPSG:28352",
+            "value": "Map Grid of Australia Zone 52 (GDA 94)",
+            "extent": {
+               "xMax": 132,
+               "xMin": 126,
+               "yMax": -8,
+               "yMin": -56
+            }
+         },
+         {
+            "code": "EPSG:28353",
+            "value": "Map Grid of Australia Zone 53 (GDA 94)",
+            "extent": {
+               "xMax": 138,
+               "xMin": 132,
+               "yMax": -8,
+               "yMin": -56
+            }
+         },
+         {
+            "code": "EPSG:28354",
+            "value": "Map Grid of Australia Zone 54 (GDA 94)",
+            "extent": {
+               "xMax": 144,
+               "xMin": 138,
+               "yMax": -8,
+               "yMin": -56
+            }
+         },
+         {
+            "code": "EPSG:28355",
+            "value": "Map Grid of Australia Zone 55 (GDA 94)",
+            "extent": {
+               "xMax": 150,
+               "xMin": 144,
+               "yMax": -8,
+               "yMin": -56
+            }
+         },
+         {
+            "code": "EPSG:28356",
+            "value": "Map Grid of Australia Zone 56 (GDA 94)",
+            "extent": {
+               "xMax": 156,
+               "xMin": 150,
+               "yMax": -8,
+               "yMin": -56
+            }
+         },
+         {
+            "code": "EPSG:28357",
+            "value": "Map Grid of Australia Zone 57 (GDA 94)",
+            "extent": {
+               "xMax": 162,
+               "xMin": 156,
+               "yMax": -54.7,
+               "yMin": -54.8
+            }
+         },
+         {
+            "code": "EPSG:28358",
+            "value": "Map Grid of Australia Zone 58 (GDA 94)",
+            "extent": {
+               "xMax": 168,
+               "xMin": 162,
+               "yMax": -8,
+               "yMin": -56
+            }
+         },
+         {
+            "code": "GDA94.Geoscience/Lmbrt",
+            "value": "GDA94 / Geoscience Australia Lambert (EPSG:3112)",
+            "extent": {
+               "xMax": 155,
+               "xMin": 108,
+               "yMax": -10,
+               "yMin": -45
+            }
+         },
+         {
+            "code": "LL-GDA94",
+            "value": "Geodetic Datum of Australia 1994 (EPSG:4283)",
+            "extent": {
+               "xMax": 155,
+               "xMin": 108,
+               "yMax": -10,
+               "yMin": -45
+            }
+         },
+         {
+            "code": "LL-WGS84",
+            "value": "WGS84 Lat/Longs (EPSG:4326)"
+         }
+      ]
+   }
+}

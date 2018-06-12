@@ -1,0 +1,16 @@
+<div class="container contentContainer">
+	<div class="row icsmPanesRow" >
+		<div class="icsmPanesCol" ng-class="{'col-md-12':!view, 'col-md-7':view}" style="padding-right:0">
+			<div class="panesMapContainer" geo-map configuration="data.map">
+			    <geo-extent></geo-extent>
+			</div>
+    		<div geo-draw data="data.map.drawOptions" line-event="elevation.plot.data" rectangle-event="bounds.drawn"></div>
+		</div>
+		<div class="icsmPanesColRight" ng-class="{'hidden':!view, 'col-md-5':view}" style="padding-left:0; padding-right:0">
+			<div class="panesTabContentItem" ng-show="view == 'download'" icsm-view></div>
+			<div class="panesTabContentItem" ng-show="view == 'maps'" icsm-maps></div>
+			<div class="panesTabContentItem" ng-show="view == 'glossary'" icsm-glossary></div>
+			<div class="panesTabContentItem" ng-show="view == 'help'" icsm-help></div>
+		</div>
+	</div>
+</div>

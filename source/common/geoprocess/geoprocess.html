@@ -1,0 +1,152 @@
+<div class="container-fluid" style="overflow-x:hidden" ng-form>
+	<div ng-show="stage=='bbox'">
+		<div class="row">
+			<div class="col-md-12">
+				<wizard-clip trigger="stage == 'bbox'" drawn="drawn()" clip="data.processing.clip" bounds="data.bounds"></wizard-clip>
+			</div>
+		</div>
+		<div class="row" style="height:55px">
+ 			<div class="col-md-12">
+				<button class="btn btn-primary pull-right" ng-disabled="!validClip(data) || checkingOrFailed" ng-click="stage='formats'">Next</button>
+			</div>
+		</div>
+		<div class="well">
+			<strong style="font-size:120%">Select an area of interest.</strong> There are two ways to select your area of interest:
+			<ol>
+				<li>Draw an area on the map with the mouse by clicking a corner and while holding the left mouse button
+					down drag diagonally across the map to the opposite corner or</li>
+				<li>Type your co-ordinates into the areas above.</li>
+			</ol>
+			Once drawn the points can be modified by the overwriting the values above or drawing another area by clicking the draw button again.
+			Ensure you select from the highlighted areas as the data can be quite sparse for some data.<br/>
+			<p style="padding-top:5px">
+			<strong>Warning:</strong> Some extracts can be huge. It is best if you start with a small area to experiment with first. An email will be sent
+			with the size of the extract. Download judiciously.
+			</p>
+			<p style="padding-top"><strong>Hint:</strong> If the map has focus, you can use the arrow keys to pan the map.
+				You can zoom in and out using the mouse wheel or the "+" and "-" map control on the top left of the map. If you
+				don't like the position of your drawn area, hit the "Draw" button and draw a new bounding box.
+			</p>
+		</div>
+	</div>
+
+	<div ng-show="stage=='formats'">
+		<div class="well">
+		<div class="row">
+  			<div class="col-md-3">
+				<label for="geoprocessOutputFormat">
+					Output Format
+				</label>
+			</div>
+			<div class="col-md-9">
+				<select id="geoprocessOutputFormat" style="width:95%" ng-model="data.processing.outFormat" ng-options="opt.value for opt in config.outFormat"></select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<label for="geoprocessOutCoordSys">
+					Coordinate System
+				</label>
+			</div>
+			<div class="col-md-9">
+				<select id="geoprocessOutCoordSys" style="width:95%" ng-model="data.processing.outCoordSys" ng-options="opt.value for opt in config.outCoordSys | sysIntersect : data.processing.clip"></select>
+			</div>
+		</div>
+		</div>
+		<div class="row" style="height:55px">
+			<div class="col-md-6">
+				<button class="btn btn-primary" ng-click="stage='bbox'">Previous</button>
+			</div>
+			<div class="col-md-6">
+				<button class="btn btn-primary pull-right" ng-disabled="!validSansEmail(data)" ng-click="stage='email'">Next</button>
+   			</div>
+		</div>
+
+		<div class="well">
+			<strong style="font-size:120%">Data representation.</strong> Select how you want your data presented.<br/>
+			Output format is the structure of the data and you should choose a format compatible with the tools that you will use to manipulate the data.
+			<ul>
+				<li ng-repeat="format in outFormats"><strong>{{format.value}}</strong> - {{format.description}}</li>
+			</ul>
+			Select what <i>coordinate system</i> or projection you would like. If in doubt select WGS84.<br/>
+			Not all projections cover all of Australia. If the area you select is not covered by a particular projection then the option to download in that projection will not be available.
+		</div>
+	</div>
+
+	<div ng-show="stage=='email'">
+		<div class="well" exp-enter="stage='confirm'">
+			<div download-email></div>
+			<br/>
+			<div download-filename data="data.processing"></div>
+		</div>
+		<div class="row" style="height:55px">
+			<div class="col-md-6">
+				<button class="btn btn-primary" ng-click="stage='formats'">Previous</button>
+			</div>
+			<div class="col-md-6">
+				<button class="btn btn-primary pull-right" ng-disabled="!allDataSet(data)" ng-click="stage='confirm'">Submit</button>
+   			</div>
+		</div>
+		<div class="well">
+			<strong style="font-size:120%">Email notification</strong> The extract of data can take some time. By providing an email address we will be able to notify you when the job is complete. The email will provide a link to the extracted
+			data which will be packaged up as a single file. To be able to proceed you need to have provided:
+			<ul>
+				<li>An area of interest to extract the data (referred to as a bounding box).</li>
+				<li>An output format.</li>
+				<li>A valid coordinate system or projection.</li>
+				<li>An email address to receive the details of the extraction.</li>
+				<li><strong>Note:</strong>Email addresses need to be and are stored in the system.</li>
+			</ul>
+			<strong style="font-size:120%">Optional filename</strong> The extract of data can take some time. By providing an optional filename it will allow you
+			to associate extracted data to your purpose for downloading data. For example:
+			<ul>
+				<li>myHouse will have a file named myHouse.zip</li>
+				<li>Sorrento would result in a file named Sorrento.zip</li>
+			</ul>
+		</div>
+	</div>
+
+	<div ng-show="stage=='confirm'">
+		<div class="row">
+			<div class="col-md-12 abstractContainer">
+				{{data.abstract}}
+			</div>
+		</div>
+		<h3>You have chosen:</h3>
+		<table class="table table-striped">
+			<tbody>
+				<tr>
+					<th>Area</th>
+					<td>
+						<span style="display:inline-block; width: 10em">Lower left (lat/lng&deg;):</span> {{data.processing.clip.yMin | number : 6}}, {{data.processing.clip.xMin | number : 6}}<br/>
+						<span style="display:inline-block;width: 10em">Upper right (lat/lng&deg;):</span> {{data.processing.clip.yMax | number : 6}}, {{data.processing.clip.xMax | number : 6}}
+					</td>
+				</tr>
+				<tr>
+					<th>Output format</th>
+					<td>{{data.processing.outFormat.value}}</td>
+				</tr>
+				<tr>
+					<th>Coordinate system</th>
+					<td>{{data.processing.outCoordSys.value}}</td>
+				</tr>
+				<tr>
+					<th>Email address</th>
+					<td>{{email}}</td>
+				</tr>
+				<tr ng-show="data.processing.filename">
+					<th>Filename</th>
+					<td>{{data.processing.filename}}</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="row" style="height:55px">
+			<div class="col-md-6">
+				<button class="btn btn-primary" style="width:6em" ng-click="stage='email'">Back</button>
+			</div>
+			<div class="col-md-6">
+				<button class="btn btn-primary pull-right" ng-click="startExtract()">Confirm</button>
+   			</div>
+		</div>
+	</div>
+</div>

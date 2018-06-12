@@ -1,0 +1,27 @@
+<!-- tabs go here -->
+<div id="panesTabsContainer" class="paneRotateTabs" style="opacity:0.9" ng-style="{'right' : contentLeft +'px'}">
+
+   <div class="paneTabItem" style="width:60px; opacity:0">
+
+   </div>
+   <div class="paneTabItem" ng-class="{'bold': view == 'download'}" ng-click="setView('download')">
+      <button class="undecorated">Datasets Download</button>
+   </div>
+   <!--
+	<div class="paneTabItem" ng-class="{'bold': view == 'search'}" ng-click="setView('search')">
+		<button class="undecorated">Search</button>
+	</div>
+	<div class="paneTabItem" ng-class="{'bold': view == 'maps'}" ng-click="setView('maps')">
+		<button class="undecorated">Layers</button>
+	</div>
+   -->
+   <div class="paneTabItem" ng-class="{'bold': view == 'downloader'}" ng-click="setView('downloader')">
+      <button class="undecorated">Products Download</button>
+   </div>
+   <div class="paneTabItem" ng-class="{'bold': view == 'glossary'}" ng-click="setView('glossary')">
+      <button class="undecorated">Glossary</button>
+   </div>
+   <div class="paneTabItem" ng-class="{'bold': view == 'help'}" ng-click="setView('help')">
+      <button class="undecorated">Help</button>
+   </div>
+</div>

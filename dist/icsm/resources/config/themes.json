@@ -1,0 +1,92 @@
+{
+   "themes":[
+       {
+         "code": "map",
+         "label": "Administrative Boundaries",
+         "title": "Cartographic representation of borders between states/territories that allows consistent analysis on the cross-border zones.",
+         "description": "The Administrative Boundaries datasets are Australiaâs most comprehensive national collection of boundaries including government, statistical and electoral boundaries.",
+         "className": "altthemes-map",
+         "url": "comingSoon.html",
+         "urlPending": "administrativeBoundaries.html",
+         "keys": []
+      },
+      {
+         "code": "sign",
+         "enabled": false,
+         "label": "Place Names",
+         "title": "Cultural and physical features and their associated spatial identifiers, location and extent.",
+         "description": "Place Names are the names of cultural and physical features and their associated spatial identifiers, location and extent. Place Names constitute the most commonly used spatial references and can be approved, unapproved, commonly used or historical.",
+         "className": "altthemes-sign",
+         "url": "placenames.html",
+         "keys": ["sign"]
+      },
+      {
+         "code": "parcel",
+         "label": "Land Parcel and Property",
+         "title": "Land Parcel and Property can be interchangeable with cadastral, land administration and property systems.",
+         "description": "Land Parcel and Property is a land boundary system. The term Land Parcel and Property can be interchangeable with cadastral, land administration and property systems.",
+         "className": "altthemes-parcel",
+         "url": "comingSoon.html",
+         "urlPending": "landParcelAndProperty.html",
+         "keys": []
+      },
+      {
+         "code": "satellite",
+         "label": "Imagery",
+         "title": "Imagery is derived from sensor technologies used to detect, locate, classify and record objects relative to the surface of the Earth.",
+         "description": "Imagery is derived from sensor technologies used to detect, locate, classify and record objects relative to the surface of the Earth. This includes data sourced from satellite, airborne sensors and terrestrial cameras. It includes but is not limited to orthorectified multispectral, hyper spectral and panchromatic sensors. Raw data is collected from a satellite or airborne mission and then processed and orthorectified to remove tilt, terrain, atmospheric and other image distortions",
+         "className": "altthemes-satellite",
+         "url": "imagery.html",
+         "keys": ["satellite"]
+      },
+      {
+         "code": "ship",
+         "label": "Transport",
+         "title": "The Transport network provides the means for moving people, goods and freight, and other services from one location to another.",
+         "description": "The Transport network provides the means for moving people, goods and freight, and other services from one location to another.",
+         "className": "altthemes-ship",
+         "url": "comingSoon.html",
+         "urlPending": "transport.html",
+         "keys": ["ship"]
+      },
+      {
+         "code": "water",
+         "label": "Water",
+         "title": "Pereniality in surface hydrology datasets updated by Geoscience Australia from Water Observations from Space dataset.",
+         "description": "Water can be described by hydrology; the study of the movement, distribution and quality of water, including the hydrologic cycles, water resources, environmental watershed sustainability and groundwater systems. The Water theme focuses on datasets related to surface and groundwater and excludes atmospheric, industrial or oceanic water processes. Understanding water interactions requires knowledge of the features that make up the hydrological system such as catchments, streams, aquifers, floodplains, and storages.",
+         "className": "altthemes-water",
+         "url": "water.html",
+         "keys": []
+      },
+      {
+         "code": "shore",
+         "label": "Elevation and Depth",
+         "enabled": true,
+         "title": "Elevation and Depth is the measurement of the Earthâs surface (wet or dry) above or below a vertical datum to obtain either the height of the land or a bathymetric depth.",
+         "description": "Elevation and Depth is the measurement of the Earthâs surface (wet or dry) above or below a vertical datum to obtain either the height of the land or a bathymetric depth. Elevation and Depth information data is collected using a range of sensors; including laser, sound navigation and ranging (sonar), radio detection and ranging (radar), optical remote sensing and survey techniques to derive spot heights, raster surfaces, contours and digital models of terrain.",
+         "className": "altthemes-shore",
+		   "url": "https://link.fsdf.org.au/fsdf-theme/elevation-and-depth",
+         "keys": ["satellite", "shore"]
+      },
+      {
+         "code": "land",
+         "label": "Land Cover",
+         "title": "Land Cover is the observed biophysical cover on the Earth's surface including trees, shrubs, grasses, soils, exposed rocks and water bodies.",
+         "description": "Land Cover is the observed biophysical cover on the Earth's surface including trees, shrubs, grasses, soils, exposed rocks and water bodies; as well as anthropogenic elements such as plantations, crops and built environments. Land cover changes for many reasons, including seasonal weather, severe weather events such as cyclones, floods and fires, and human activities such as mining, agriculture and urbanisation.",
+         "className": "altthemes-land",
+         "url": "comingSoon.html",
+         "urlPending": "landCover.html",
+         "keys": []
+      },
+      {
+         "code": "position",
+         "label": "Positioning",
+         "enabled": true,
+         "title": "Positioning.",
+         "description": "Positioning.",
+         "className": "altthemes-crosshair",
+         "url": "positioning.html",
+         "keys": ["satellite", "position"]
+      }
+   ]
+}

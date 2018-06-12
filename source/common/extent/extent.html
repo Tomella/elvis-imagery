@@ -1,0 +1,37 @@
+<div class="row" style="border-top: 1px solid gray; padding-top:5px">
+	<div class="col-md-5">
+		<div class="form-inline">
+			<label>
+				<input id="extentEnable" type="checkbox" ng-model="parameters.fromMap" ng-click="change()"></input> 
+				Restrict area to map
+			</label>
+		</div>
+	</div>
+	 
+	<div class="col-md-7" ng-show="parameters.fromMap">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-offset-3 col-md-8">
+					<strong>Y Max:</strong> 
+					<span>{{parameters.yMax | number : 4}}</span> 
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<strong>X Min:</strong>
+					<span>{{parameters.xMin | number : 4}}</span> 
+				</div>
+				<div class="col-md-6">
+					<strong>X Max:</strong>
+					<span>{{parameters.xMax | number : 4}}</span> 
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-3 col-md-8">
+					<strong>Y Min:</strong>
+					<span>{{parameters.yMin | number : 4}}</span> 
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

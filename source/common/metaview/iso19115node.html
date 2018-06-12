@@ -1,0 +1,10 @@
+<ul>
+   <li>
+      <span class="metaview-head">{{key | metaviewNodeName}}</span>
+      <span>{{node | metaviewText}}</span>
+      <ng-repeat ng-if="isArray()" ng-repeat="next in node" node="next]">
+         <metaview-iso19115-array ng-repeat="nextKey in getKeys() track by $index" node="node[nextKey]" key="nextKey"></metaview-iso19115-array>
+      </ng-repeat>
+      <metaview-iso19115-node ng-if="!isArray()" ng-repeat="nextKey in getKeys() track by $index" node="node[nextKey]" key="nextKey"></metaview-iso19115-node>
+   </li>
+</ul>

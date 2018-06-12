@@ -1,0 +1,24 @@
+<div class="iso19115">
+   <ul>
+      <li>
+         <span class="iso19115-head">Metadata</span>
+         <iso19115-node name="fileIdentifier" node="node.fileIdentifier" type="CharacterString"></iso19115-node>
+         <iso19115-node name="language" node="node.language" type="LanguageCode"></iso19115-node>
+         <ul ng-show="node.characterSet">
+            <li>
+               <span class="iso19115-head">Character Set</span>
+               <iso19115-node name="CharacterSetCode" node="node.characterSet.MD_CharacterSetCode" type="_codeListValue"></iso19115-node>
+            </li>
+         </ul>
+
+         <ul ng-show="node.hierarchyLevel">
+            <li>
+               <span class="iso19115-head">Hierarchy Level</span>
+               <iso19115-node name="MD_ScopeCode" node="node.hierarchyLevel.MD_ScopeCode" type="_codeListValue"></iso19115-node>
+            </li>
+         </ul>
+         <iso19115-node name="hierarchyLevelName" node="node.hierarchyLevelName" type="CharacterString"></iso19115-node>
+         <iso19115-contact ng-if="node.contact" node="node.contact" key="'contact'"></iso19115-contact>
+      </li>
+   </ul>
+</div>

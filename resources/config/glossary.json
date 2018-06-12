@@ -1,0 +1,174 @@
+[
+	{
+		"term" : "Accuracy",
+		"definition" : "The closeness of an estimated (for example, measured or computed) value to a standard or accepted [true] value of a particular quantity. Note: Because the true value is not known, but only estimated, the accuracy of the measured quantity is also unknown. Therefore, accuracy of coordinate information can only be estimated."
+	},
+	{
+		"term" : "Absolute Accuracy",
+		"definition" : "A measure that relates the stated elevation to the true elevation with respect to an established vertical datum. The computed value for the absolute vertical accuracy (tested, or compiled to) should be included in the metadata file."
+	},
+	{
+		"term" : "Artefacts",
+		"definition" : "Buildings, trees, towers, telephone poles or other elevated features that should be removed when depicting a DEM of the bare-earth terrain. Artefacts are not just limited to real features that need to be removed. They also include unintentional by-products of the production process, such as stripes in manually profiled DEMs. Any feature, whether man-made or system-made, that unintentionally exists in a digital elevation model."
+	},
+	{
+		"term" : "AHD",
+		"definition" : "The Australian Height Datum. Established in 1971 as a national datum for elevations based on observed mean sea level around the Australian coast line. Determined on the Australian mainland by an adjustment of a national levelling network constrained to mean sea level from continuous tidal observations over a period of 3 years at 30 tide gauges. AHD (Tasmania) was re-established in 1983 by adjusting the Tasmanian levelling network to mean sea level determined from one year of tidal observations at 2 tide gauges."
+	},
+	{
+		"term" : "ALS",
+		"definition" : "Airborne Laser Scanning (ALS). A terrain definition process which utilises an airborne laser source to accurately measure the earth surface from computation of laser range and return signal intensity, measurements recorded in-flight along with position and altitude data derived from airborne GPS and inertial subsystems.  Falls into the category of airborne instrumentation known as LiDAR (Light Detection and Ranging). May also include Airborne Laser Bathymetry (ALB)"
+	},
+	{
+		"term" : "ASCII File",
+		"definition" : "American Standard Code for Information Interchange (ASCII) file. A file whose data is in ASCII characters and does not include formatting such as bold, italic, centred text, etc."
+	},
+	{
+		"term" : "Breakline",
+		"definition" : "Linear features that describe a change in the smoothness or continuity of the surface."
+	},
+	{
+		"term" : "Calibration",
+		"definition" : "Procedures used to identify systematic errors in hardware, software, and procedures so that these errors can be corrected in preparing the data derived there from."
+	},
+	{
+		"term" : "CEM",
+		"definition" : "Canopy Elevation Model is a grid that represents the mean canopy height above the ground surface. The CEM is generally derived from the first return LiDAR data. The CEM therefore represents the highest derived vegetation surface."
+	},
+	{
+		"term" : "Checkpoint",
+		"definition" : "One of the points in the sample used to estimate the positional accuracy of the dataset against an independent source of higher accuracy."
+	},
+	{
+		"term" : "Colour digital aerial photography (RGB)",
+		"definition" : "Colour digital aerial photography (RGB) Digital photographic images captured by a digital sensor off an airborne platform such as a plane. Colour aerial photography includes red, green and blue wavelengths.\nTo be acquired for the primary purpose of providing qualitative information of on-ground features, which will be used the development of the digital terrain model. However this could be used for other applications such as mapping broadly defined vegetation types."
+	},
+	{
+		"term" : "Confidence Level",
+		"definition" : "The probability that errors are within a range of given values.\nContours A line connecting points of equal height, used to display a 3D surface on a 2D map or image"
+	},
+	{
+		"term" : "DEM",
+		"definition" : "Digital Elevation Model: The representation of continuous elevation values over a topographic surface by a regular array of sampled z-values, referenced to a common datum. To be expressed as a grid or raster data set. The DEM is ground only representation and excludes vegetation such as trees and shrubs and human constructed features such as sheds and houses."
+	},
+	{
+		"term" : "Digital Photography",
+		"definition" : "Electronic image usually in a binary format that can be readily stored and edited on a computer. Aerial digital photography is digital photography taken from the vantage of an aircraft such as a helicopter or aeroplane."
+	},
+	{
+		"term" : "DSM",
+		"definition" : "Digital Surface Model : surface including ground, vegetation, building and structures defined by either random points or regular grid of spot heights and may include breaklines. Can be in point (ASCII), vector or raster format."
+	},
+	{
+		"term" : "DTM",
+		"definition" : "Digital Terrain Model: A topographic model of the earth's surface in digital format represented by mass points and may include breaklines. The DTM is a filtered version of a DSM that represents only bare earth surfaces. The DTM representation of ground includes works such as levees, banks and roads."
+	},
+	{
+		"term" : "Elevation",
+		"definition" : "Height above a specific vertical reference."
+	},
+	{
+		"term" : "ESRI",
+		"definition" : "Environmental Systems Research Institute (ESRI)."
+	},
+	{
+		"term" : "Ground control points",
+		"definition" : "Ground control points Permanent survey control marks forming the local site datum, providing sites for GPS base-station control of aircraft trajectory and establishment of check points."
+	},
+	{
+		"term" : "Ground sample distance (GSD)",
+		"definition" : "Ground resolution of airborne or satellite imagery, e.g. 30cm GSD"
+	},
+	{
+		"term" : "ICSM",
+		"definition" : "Inter-Governmental Committee on Surveying and Mapping"
+	},
+	{
+		"term" : "Hydrological enforcement",
+		"definition" : "The removal of elevations from the tops of selected drainage structures (bridges and culverts) in a DEM, TIN or topographic dataset to depict the terrain under those structures. Also referred to as drainage enforced."
+	},
+	{
+		"term" : "IFSAR",
+		"definition" : "Interferometric Synthetic Aperture Radar: An airborne or spaceborne interferometer radar system, flown aboard rotary or fixed wing aircraft or space-based platforms, that is used to acquire 3-D coordinates of terrain and terrain features that are both man-made and naturally occurring. IFSAR systems form synthetic aperture images of terrain surfaces from two spatially separated antennae over an imaged swath that may be located to the left, right, or both sides of the imaging platform."
+	},
+	{
+		"term" : "IHO",
+		"definition" : "The International Hydrographic Organisation.  The International Hydrographic Bureau is the publisher of the IHO Standards for Hydrographic Surveys (Special Publication 44, April 1998)"
+	},
+	{
+		"term" : "Image block file",
+		"definition" : "Strip of digital imagery captured from a plane (or similar airborne platform) along a section of a flight run."
+	},
+	{
+		"term" : "Image correlation",
+		"definition" : "A computerised technique to match the similarities of pixels in one digital image with comparable pixels in its digital stereo image to automate or semi-automate photogrammetric compilation. Image correlation provides a faster method for generating DEMs photogrammetrically."
+	},
+	{
+		"term" : "Independent source of higher accuracy",
+		"definition" : "Data acquired independently of procedures to generate the dataset that is used to test the positional accuracy of a dataset. The independent source of higher accuracy shall be of the highest accuracy feasible and practicable to evaluate the accuracy of the dataset."
+	},
+	{
+		"term" : "Interpolation",
+		"definition" : "The estimation of z-values at a point with x/y coordinates, based on the known z-values of surrounding points."
+	},
+	{
+		"term" : "LADS",
+		"definition" : "Laser Airborne Depth Sounding, also referred to as Airborne LIDAR Bathymetry."
+	},
+	{
+		"term" : "LAS",
+		"definition" : "LAS version 1.1 is a standard LiDAR file format, defined by the American Society of Photogrammetry and Remote Sensing (ASPRS). LASV1.1 defines, amongst other things, mandatory data fields and point categories. This includes mandatory metadata documentation. "
+	},
+	{
+		"term" : "LiDAR",
+		"definition" : "Light Detection and Ranging (LiDAR).  A technology that determines distance to a surface using laser pulses.  Distance is computed by measuring the time delay between transmission and detection of the reflected signal. Also referred to Airborne Laser Scanning (ALS)."
+	},
+	{
+		"term" : "Local Site Datum",
+		"definition" : "Established network of state survey control marks in close proximity to each project area with published coordinates in a specific coordinate system."
+	},
+	{
+		"term" : "Mass points",
+		"definition" : "Irregularly spaced points, each with an x/y location and a z-value, used to form a TIN. When generated manually, mass points are ideally chosen to depict the most significant variations in the slope or aspect of TIN triangles. However, when generated by automated methods, For example, by LIDAR or IFSAR scanners, mass point spacing and pattern depend on characteristics of the technologies used to acquire the data. Mass points are most often used to make a TIN, but not always. They can be used as XYZ point data for interpolation of a grid without an intermediate TIN stage."
+	},
+	{
+		"term" : "MHW",
+		"definition" : "Mean High Water: A tidal level. The average of all high waters observed over a sufficiently long period."
+	},
+	{
+		"term" : "National Digital Elevation Program (NDEP)",
+		"definition" : "United States program established to promote the exchange of accurate digital land elevation data among government, private, and non-profit sectors and the academic community and to establish standards and guidance that benefit all users."
+	},
+	{
+		"term" : "Near-Infrared digital aerial photography (NIR)",
+		"definition" : "Digital near-infrared imagery captured by a digital sensor from an airborne platform such as a plane."
+	},
+	{
+		"term" : "Order",
+		"definition" : "The accuracy ranking of one measurement or survey with respect to other measurements or surveys."
+	},
+	{
+		"term" : "Projective foliage cover (PFC)",
+		"definition" : "The proportion of ground covered by foliage. PFC represents a measure of the openness of the vegetation canopy when projected vertically onto the ground.  For LiDAR data PFC represents the proportion of returns from the vegetation canopy as a proportion of total returns."
+	},
+	{
+		"term" : "Raw digital aerial photography",
+		"definition" : "Digital aerial photography that has not been colour balanced, ortho-rectified or converted into a mosaic, and which still contains redundant imagery such as overlapping images."
+	},
+	{
+		"term" : "RMSE",
+		"definition" : "The square root of the mean of squared errors for a sample."
+	},
+	{
+		"term" : "SP1",
+		"definition" : "ICSM Special Publication No.1 - Standards and Practices for Control Surveys"
+	},
+	{
+		"term" : "SP44",
+		"definition" : "International Hydrographic Organisation Standards for Hydrographic Surveys"
+	},
+	{
+		"term" : "TIN",
+		"definition" : "A TIN is a set of adjacent, non-overlapping triangles computed from irregularly spaced points with x/y coordinates and z-values. The TIN data structure is based on irregularly spaced point, line, and polygon data interpreted as mass points and breaklines and stores the topological relationship between triangles and their adjacent neighbours. The TIN structure is often superior to other data models derived from mass points because it preserves the exact location of each ground point sample."
+	}
+]

@@ -1,0 +1,30 @@
+.nav-icons {
+   margin-top: 7px !important;
+}
+
+@media only screen and (max-width:1200px) {
+   .nav-icons {
+      margin-top: 30px;
+   }
+}
+
+.breadcrumbsContainer {
+   margin-left: 245px;
+}
+
+.header-logo img {
+   padding-top: 3px;
+}
+
+.header-logo {
+   padding-right: 20px;
+}
+
+.applicationTitle {
+   padding-left: 20px;
+   font-size: 200%;
+}
+
+.common-header {
+   background-color: white;
+}

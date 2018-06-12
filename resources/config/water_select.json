@@ -1,0 +1,29 @@
+{
+  	"response": {
+		"docs":[
+      		{
+      			"type": "dataset",
+        		"title":"DEM SRTM 1Second Hydrologically Enforced",
+        		"abstract":"This Service represents the National Digital Elevation Model (DEM) 1 Second Hydrologically Enforced product, derived from the National DEM SRTM 1 Second and National Watercourses, lakes and Reservoirs. ",
+        		"systemCode":"gcat",
+        		"sysId":"gcat_a05f7893-0050-7506-e044-00144fdd4fa6",
+        		"primaryId":"a05f7893-0050-7506-e044-00144fdd4fa6",
+        		"restrictSize": 16,
+        		"showExtent": true,
+        		"rights":["Commonwealth of Australia (Geoscience Australia) ; Creative Commons Attribution 4.0 International Licence"],
+        		"keywords":["Web Service",
+          		"topography",
+          		"ECOLOGY Landscape",
+          		"LAND Topography Models",
+          		"Earth Sciences"],
+        		"bbox":"113.0 -44.0 154.0 -10.0",
+        		"pubDate":"1999-12-31T13:00:00Z",
+        		"dcUris":[
+        			"<dc:URI xmlns:dc='http://purl.org/dc/elements/1.1/' protocol='OGC:WCS' name='hydro_WCS' description='dem_s_1s_WCS'>http://services.ga.gov.au/gis/services/DEM_SRTM_1Second_Hydro_Enforced/MapServer/WCSServer?request=GetCapabilities&amp;service=WCS&amp;version=1.0.0</dc:URI>",
+        			"<dc:URI xmlns:dc='http://purl.org/dc/elements/1.1/' protocol='OGC:WMS' layerNames='Image' name='hydro_WMS' description='dem_s_1s_WMS'>http://services.ga.gov.au/gis/services/DEM_SRTM_1Second_Hydro_Enforced/MapServer/WMSServer?request=GetCapabilities&amp;service=WMS</dc:URI>"
+        		],
+        		"_version_":1517571386649870337
+        	}
+     	]
+   }
+}

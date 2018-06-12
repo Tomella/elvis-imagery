@@ -1,0 +1,31 @@
+{
+	"show": true,
+	"email" : null,
+	"item" : {
+      "type": "dataset",
+      "title":"Select an area of interest.",
+      "abstract":"Once you have selected an area less than 2 degrees we will find the intersecting datasets for your area and you can choose to download the data.",
+      "systemCode":"nlig",
+      "sysId":"nlig_1",
+      "primaryId":"1",
+      "restrictSize": 2.25,
+      "showExtent": true,
+      "rights":["Commonwealth of Australia (Geoscience Australia) ; Creative Commons Attribution 4.0 International Licence"],
+      "keywords":["Web Service",
+      		"topography",
+        		"ECOLOGY Landscape",
+        		"LAND Topography Models",
+        		"Earth Sciences"],
+      "bbox":"113.0 -44.0 154.0 -10.0",
+      "bounds": {
+         "xMin": 113.0,
+         "xMax": 154.0,
+         "yMin": -44.0,
+         "yMax":-10.0
+      },
+      "dcUris":[
+      	"<dc:URI xmlns:dc='http://purl.org/dc/elements/1.1/' protocol='OGC:WMS' layerNames='Image' name='Image' description='Image'>http://services.ga.gov.au/gis/services/DEM_SRTM_1Second/MapServer/WMSServer?request=GetCapabilities&amp;service=WMS</dc:URI>"
+      ],
+      "_version_":1517571386649870337
+   }
+}

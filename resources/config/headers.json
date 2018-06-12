@@ -1,0 +1,73 @@
+{
+	"default": {
+		"heading": "ELVIS - Foundation Spatial Data",
+		"headingtitle": "ELVIS",
+		"breadcrumbs": [{"name": "ELVIS", "title": "Reload ELVIS - Foundation Spatial Data", "url": "/"}],
+		"helptitle": "Get help about ELVIS - Foundation Spatial Data",
+		"helpalttext": "Get help about ELVIS - Foundation Spatial Data"
+	},
+	"administrativeBoundaries": {
+		"heading": "Administrative Boundaries",
+		"headingtitle": "Administrative Boundaries",
+		"breadcrumbs": [{"name": "ELVIS", "title": "Reload ELVIS - Foundation Spatial Data", "url": "/"}],
+		"helptitle": "Get help about Administrative Boundaries",
+		"helpalttext": "Get help about Administrative Boundaries"
+	},
+	"positioning": {
+		"heading": "Explorer Positioning",
+		"headingtitle": "Positioning",
+		"breadcrumbs": [{"name": "ELVIS", "title": "Reload ELVIS - Foundation Spatial Data", "url": "/"}],
+		"helptitle": "Get help about Positioning",
+		"helpalttext": "Get help about Positioning"
+	},
+	"placeNames": {
+		"heading": "Explorer Place Names",
+		"headingtitle": "Place Names",
+		"breadcrumbs": [{"name": "ELVIS", "title": "Reload ELVIS - Foundation Spatial Data", "url": "/"}],
+		"helptitle": "Get help about Place Names",
+		"helpalttext": "Get help about Place Names"
+	},
+	"landParcelAndProperty": {
+		"heading": "Explorer Land Parcel and Property",
+		"headingtitle": "Land Parcel and Property",
+		"breadcrumbs": [{"name": "ELVIS", "title": "Reload ELVIS - Foundation Spatial Data", "url": "/"}],
+		"helptitle": "Get help about Land Parcel and Property",
+		"helpalttext": "Get help about Land Parcel and Property"
+	},
+	"imagery": {
+		"heading": "Explorer Imagery",
+		"headingtitle": "Imagery",
+		"breadcrumbs": [{"name": "ELVIS", "title": "Reload ELVIS - Foundation Spatial Data", "url": "/"}],
+		"helptitle": "Get help about Imagery",
+		"helpalttext": "Get help about Imagery"
+	},
+	"transport": {
+		"heading": "Explorer Transport",
+		"headingtitle": "Transport",
+		"breadcrumbs": [{"name": "ELVIS", "title": "Reload ELVIS - Foundation Spatial Data", "url": "/"}],
+		"helptitle": "Get help about Transport",
+		"helpalttext": "Get help about Transport"
+	},
+	"water": {
+		"heading": "Explorer Water",
+		"headingtitle": "Water",
+		"breadcrumbs": [{"name": "ELVIS", "title": "Reload ELVIS - Foundation Spatial Data", "url": "/"}],
+		"helptitle": "Get help about Water",
+		"helpalttext": "Get help about Water"
+	},
+	"elevationAndDepth": {
+		"heading": "Explorer Elevation and Depth",
+		"enabled": true,
+		"headingtitle": "Elevation and Depth",
+		"breadcrumbs": [{"name": "ELVIS", "title": "Reload ELVIS - Foundation Spatial Data", "url": "/"}],
+		"helptitle": "Get help about Elevation and Depth",
+		"helpalttext": "Get help about Elevation and Depth"
+	},
+	"landCover": {
+		"heading": "Land Cover",
+		"headingtitle": "Land Cover",
+		"breadcrumbs": [{"name": "ELVIS", "title": "Reload ELVIS - Foundation Spatial Data", "url": "/"}],
+		"helptitle": "Get help about Land Cover",
+		"helpalttext": "Get help about Land Cover"
+	}
+}

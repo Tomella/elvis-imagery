@@ -1,0 +1,113 @@
+{
+  	"response": {
+		"docs":[
+      		{
+      			"type": "dataset",
+        		"title":"SRTM-derived 1 Second Digital Elevation Models Version 1.0",
+        		"abstract":"The 1 second Shuttle Radar Topography Mission (SRTM) Digital Elevation Models Version 1.0 package comprises three surface models: the Digital Elevation Model (DEM; ANZCW0103013355), the Smoothed Digital Elevation Model (DEM-S; ANZCW0703014016) and the Hydrologically Enforced Digital Elevation Model (DEM-H; ANZCW0703014615). The DEMs were derived from the SRTM data acquired by NASA in February 2000 and were publicly released under Creative Commons licensing from November 2011 in ESRI Grid format. DEM represents ground surface topography, with vegetation features removed using an automatic process supported by several vegetation maps. This provides substantial improvements in the quality and consistency of the data relative to the original SRTM data, but is not free from artefacts. Man-made structures such as urban areas and power line towers have not been treated. The removal of vegetation effects has produced satisfactory results over most of the continent and areas with defects identified in supplementary layers distributed with the data, and described in the User Guide. DEM-S represents ground surface topography, excluding vegetation features, and has been smoothed to reduce noise and improve the representation of surface shape. An adaptive smoothing process applied more smoothing in flatter areas than hilly areas, and more smoothing in noisier areas than in less noisy areas. This DEM-S supports calculation of local terrain shape attributes such as slope, aspect and curvature that could not be reliably derived from the unsmoothed 1 second DEM because of noise. DEM-H is a hydrologically enforced version of the smoothed DEM-S. The DEM-H captures flow paths based on SRTM elevations and mapped stream lines, and supports delineation of catchments and related hydrological attributes. The dataset was derived from the 1 second smoothed Digital Elevation Model (DEM-S; ANZCW0703014016) by enforcing hydrological connectivity with the ANUDEM software, using selected AusHydro V1.6 (February 2010) 1:250,000 scale watercourse lines (ANZCW0503900101) and lines derived from DEM-S to define the watercourses. The drainage enforcement has produced a consistent representation of hydrological connectivity with some elevation artefacts resulting from the drainage enforcement. Further information can be found in the supplementary layers supplied with the data and in the User Guide.",
+        		"systemCode":"gcat",
+        		"sysId":"gcat_aac46307-fce8-449d-e044-00144fdd4fa6",
+        		"primaryId":"aac46307-fce8-449d-e044-00144fdd4fa6",
+        		"restrictSize": 2.25,
+        		"showExtent": true,
+        		"rights":["Commonwealth of Australia (Geoscience Australia) ; Creative Commons Attribution 4.0 International Licence"],
+        		"keywords":["Web Service",
+          		"topography",
+          		"ECOLOGY Landscape",
+          		"LAND Topography Models",
+          		"Earth Sciences"],
+        		"bbox":"113.0 -44.0 154.0 -10.0",
+        		"pubDate":"1999-12-31T13:00:00Z",
+        		"dcUris":[
+        			"<dc:URI xmlns:dc='http://purl.org/dc/elements/1.1/' protocol='OGC:WCS' name='dem_s_1s_WCS' description='dem_s_1s_WCS'>http://www.ga.gov.au/gisimg/services/topography/dem_s_1s/ImageServer/WCSServer?request=GetCapabilities&amp;service=WCS</dc:URI>",
+        			"<dc:URI xmlns:dc='http://purl.org/dc/elements/1.1/' protocol='OGC:WMS' layerNames='Image' name='Image' description='Image'>http://services.ga.gov.au/gis/services/DEM_SRTM_1Second/MapServer/WMSServer?request=GetCapabilities&amp;service=WMS</dc:URI>"
+        		],
+        		"_version_":1517571386649870337
+        	},
+      		{
+      			"type": "dataset",
+        		"title":"DEM SRTM 1Second Hydrologically Enforced",
+        		"abstract":"This Service represents the National Digital Elevation Model (DEM) 1 Second Hydrologically Enforced product, derived from the National DEM SRTM 1 Second and National Watercourses, lakes and Reservoirs. ",
+        		"systemCode":"gcat",
+        		"sysId":"gcat_a05f7893-0050-7506-e044-00144fdd4fa6",
+        		"primaryId":"a05f7893-0050-7506-e044-00144fdd4fa6",
+        		"restrictSize": 2.25,
+        		"showExtent": true,
+        		"rights":["Commonwealth of Australia (Geoscience Australia) ; Creative Commons Attribution 4.0 International Licence"],
+        		"keywords":["Web Service",
+          		"topography",
+          		"ECOLOGY Landscape",
+          		"LAND Topography Models",
+          		"Earth Sciences"],
+        		"bbox":"113.0 -44.0 154.0 -10.0",
+        		"pubDate":"1999-12-31T13:00:00Z",
+        		"dcUris":[
+        			"<dc:URI xmlns:dc='http://purl.org/dc/elements/1.1/' protocol='OGC:WCS' name='hydro_WCS' description='dem_s_1s_WCS'>http://services.ga.gov.au/gis/services/DEM_SRTM_1Second_Hydro_Enforced/MapServer/WCSServer?request=GetCapabilities&amp;service=WCS&amp;version=1.0.0</dc:URI>",
+        			"<dc:URI xmlns:dc='http://purl.org/dc/elements/1.1/' protocol='OGC:WMS' layerNames='Image' name='hydro_WMS' description='dem_s_1s_WMS'>http://services.ga.gov.au/gis/services/DEM_SRTM_1Second_Hydro_Enforced/MapServer/WMSServer?request=GetCapabilities&amp;service=WMS</dc:URI>"
+        		],
+        		"_version_":1517571386649870337
+        	},
+        	{
+      			"type": "dataset",
+        		"title": "5 metre Digital Elevation Model (DEM)",
+        		"abstract": "The Digital Elevation Model (DEM) 5 Metre Grid of Australia derived from LiDAR model represents a National 5 metre (bare earth) DEM which has been derived from some 236 individual LiDAR surveys between 2001 and 2015 covering an area in excess of 245,000 square kilometres.",
+        		"systemCode": "gcat",
+        		"showExtent": true,
+        		"sysId": "gcat_22be4b55-2465-4320-e053-10a3070a5236",
+        		"primaryId": "22be4b55-2465-4320-e053-10a3070a5236",
+        		"restrictSize": 2.25,
+        		"dcUris":[
+					"<dc:URI xmlns:dc='http://purl.org/dc/elements/1.1/' protocol='OGC:WMS' layerNames='Image' name='Image description='Image'>http://services.ga.gov.au/gis/services/DEM_LiDAR_5m/MapServer/WMSServer?request=GetCapabilities&service=WMS</dc:URI>"
+        		],
+        		"rights":["Commonwealth of Australia (Geoscience Australia) ; Creative Commons Attribution 4.0 International Licence"],
+        		"keywords":["Web Service",
+          			"topography",
+          			"ECOLOGY Landscape",
+          			"LAND Topography Models",
+          			"Earth Sciences"
+          		],
+        		"bbox":"113.760230 -45.949852 162.000033 -9.205568",
+        		"pubDate":"1999-12-31T13:00:00Z",
+        		"referenceLayer":  {
+            		"name":"SRTM 1' DEM WMS",
+            		"legendUrl": "icsm/resources/img/srtmdem.png",
+            		"type":["TileLayer", "WMS"],
+            		"key":"nswdem",
+            		"parameters":[
+            			"http://services.ga.gov.au/gis/services/DEM_LiDAR_25m/MapServer/WMSServer",
+                		{
+                   			"layers" : "Image",
+                   			"format" : "image/png",
+                   			"transparent" : true,
+                   			"opacity" : 0.4
+                		}
+            		]
+         		},
+        		"_version_":1517571040140591104
+        	},
+      		{
+      			"type": "dataset",
+        		"title":"25 metre Digital Elevation Model (DEM)",
+        		"abstract":"The Digital Elevation Model (DEM) 25 Metre Grid of Australia derived from LiDAR model represents a National 25 metre (bare earth) DEM which has been derived from some 236 individual LiDAR surveys between 2001 and 2015 covering an area in excess of 245,000 square kilometres. These surveys cover Australia's populated coastal zone; floodplain surveys within the Murray Darling Basin, and individual surveys of major and minor population centres. All available 1 metre resolution LiDAR-derived DEMs have been compiled and resampled to 25 metre resolution datasets for each survey area, and then merged into a single dataset for each State. These State datasets have also been merged into a 1 second resolution national dataset.",
+        		"systemCode":"gcat",
+        		"sysId":"gcat_22be4b55-2485-4320-e053-10a3070a5236",
+        		"primaryId":"22be4b55-2485-4320-e053-10a3070a5236",
+        		"restrictSize": 2.25,
+        		"showExtent": true,
+        		"rights":["Commonwealth of Australia (Geoscience Australia) ; Creative Commons Attribution 4.0 International Licence"],
+        		"keywords":["Web Service",
+          		"topography",
+          		"ECOLOGY Landscape",
+          		"LAND Topography Models",
+          		"Earth Sciences"],
+        		"bbox":"113.0 -44.0 154.0 -9.0",
+        		"pubDate":"1999-12-31T13:00:00Z",
+        		"dcUris":[
+        			"<dc:URI xmlns:dc='http://purl.org/dc/elements/1.1/' protocol='OGC:WCS' name='dem_s_1s_WCS' description='dem_s_1s_WCS'>http://services.ga.gov.au/gis/services/DEM_LiDAR_25m/MapServer/WCSServer?request=GetCapabilities&amp;service=WCS&amp;version=1.0.0</dc:URI>",
+					"<dc:URI xmlns:dc='http://purl.org/dc/elements/1.1/' protocol='OGC:WMS' layerNames='Image' name='Image' description='25 m DEM WMS'>http://services.ga.gov.au/gis/services/DEM_LiDAR_25m/MapServer/WMSServer?request=GetCapabilities&service=WMS</dc:URI>"
+        		],
+        		"_version_":1517571386649870337
+        	}
+     	]
+   }
+}

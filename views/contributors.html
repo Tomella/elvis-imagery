@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en-us" id="ng-app">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Contributors</title>
+    <meta charset="utf-8">
+	<link rel="icon" type="image/png" href="icsm/resources/img/SiteFavIcon.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Geoscience Australia">
+    <meta name="version" content="BUILD-VERSION">
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" crossorigin="anonymous">
+	<link href="icsm/bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+
+<style>
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+      background-color: lightblue;
+}
+</style>
+
+<body>
+   <h2 style="padding-left:40px">Contributors list for Elevation</h2>
+
+   <div id="target"></div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+   <!-- These are the "contributors" specific includes of modules -->
+<script>
+$.get("icsm/resources/config/contributors.json").done(function(data) {
+    let buffer =[];
+    for (var i = 0; i < data.length; i++) {
+      let item = data[i];
+      buffer.push(
+         '<div style="display:inline-block; width: 42em;border-radius: 5px;margin-left: 40px; margin-top: 15px; margin-bottom: 0px; border: 1px solid gray">' +
+         '<span style="width:210px;display:inline-block"><a target="_blank" href="' + item.image + '" title="Click to see full size image"><img height="' +
+         item.height + '" style="padding:5px" src="' + item.image +
+         '"></img></a></span><span style="width:15em"><a href="' + item.href +
+         '">'+ item.name +'</a></span><span style="float:right; padding:10px;">' +
+         (item.enabled? tick(): cross()) + '</span></div>');
+    }
+    target.innerHTML = buffer.join("\n");
+});
+
+function tick() {
+   return '<i class="fa fa-check fa-3" style="color:green" aria-hidden="true" title="This contributor is active for the elevation application"></i>'
+}
+
+function cross() {
+   return '<i class="fa fa-times fa-3" style="color:red" aria-hidden="true" title="This contributor is not active for the elevation application"></i>'
+}
+
+</script>
+
+</body>
+</html>

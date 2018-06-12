@@ -1,0 +1,77 @@
+{
+  "description" : "This is hand coded so edit at will. IT was generated but it looked silly with some little islands off NSW and Tasmania making it look wrong from our perspective.",
+  "states" : [{
+    "name" : "ACT",
+    "hasShape" : false,
+    "bbox" : {
+      "xMin" : 148.762665,
+      "xMax" : 149.399277,
+      "yMin" : -35.920761,
+      "yMax" : -35.124512
+    }
+   }, {
+    "name" : "New South Wales",
+    "hasShape" : false,
+    "bbox" : {
+      "xMin" : 140.999268,
+      "xMax" : 154,
+      "yMin" : -37.505032,
+      "yMax" : -28.157009
+    }
+   }, {
+    "name" : "Northern Territory",
+    "hasShape" : false,
+    "bbox" : {
+      "xMin" : 129.000473,
+      "xMax" : 138.001251,
+      "yMin" : -25.99861,
+      "yMax" : -10.96591
+    }
+   }, {
+    "name" : "Queensland",
+    "hasShape" : false,
+    "bbox" : {
+      "xMin" : 137.995956,
+      "xMax" : 153.55217,
+      "yMin" : -29.177891,
+      "yMax" : -9.22882
+    }
+   }, {
+    "name" : "South Australia",
+    "hasShape" : false,
+    "bbox" : {
+      "xMin" : 129.001343,
+      "xMax" : 141.002945,
+      "yMin" : -38.061481,
+      "yMax" : -25.996309
+    }
+   }, {
+    "name" : "Tasmania",
+    "hasShape" : false,
+    "bbox" : {
+      "xMin" : 143.818924,
+      "xMax" : 151,
+      "yMin" : -44.640301,
+      "yMax" : -39.203659
+    }
+   }, {
+    "name" : "Victoria",
+    "hasShape" : false,
+    "bbox" : {
+      "xMin" : 140.961685,
+      "xMax" : 149.976288,
+      "yMin" : -39.15918,
+      "yMax" : -33.98064
+    }
+   }, {
+    "name" : "Western Australia",
+    "hasShape" : false,
+    "bbox" : {
+      "xMin" : 112.921112,
+      "xMax" : 129.001923,
+      "yMin" : -35.134838,
+      "yMax" : -13.68949
+    }
+   }
+  ]
+ }

@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# The default google client. Works on both the ga and fsdf domains
+GA_GOOGLE_CLIENT=client=gme-geoscienceaustralia
+DEPLOY_DESTINATION=/var/www/imagery
+IMAGERY_WORK_DIR=/tmp/imagery_work
+
+# Should be home already but make sure.
+cd /home/ec2-user/elvis-imagery
+
+# Update code base
+git pull
+
+# Is this the first time, if so make destination
+test -d $DEPLOY_DESTINATION || mkdir -p $DEPLOY_DESTINATION
+
+# Copy static content to Apache
+sudo cp -rf dist/* $DEPLOY_DESTINATION
+
+
+# Sometimes you want to run it on a domain that does not have GA's Google client ID registered so
+# you can set the system variable GOOGLE_KEY in your .bash_profile and export it so that
+# it replace the GA key
+if [ -n "$GOOGLE_KEY" ]
+then
+  sudo rm -rf
+  mkdir $IMAGERY_WORK_DIR
+  cp dist/*.html $IMAGERY_WORK_DIR
+  /bin/sed -i -e 's/'"$GA_GOOGLE_CLIENT"'/'"$GOOGLE_KEY"'/g' $IMAGERY_WORK_DIR/*.html
+  sudo cp -f $IMAGERY_WORK_DIR/*.html /var/www/imagery
+  sudo rm -rf $IMAGERY_WORK_DIR
+fi

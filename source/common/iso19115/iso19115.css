@@ -1,0 +1,36 @@
+.iso19115, .iso19115 ul, .iso19115 li {
+     position: relative;
+}
+
+.iso19115 ul {
+    list-style: none;
+    padding-left: 32px;
+}
+
+.iso19115 li::before, .iso19115 li::after {
+    content: "";
+    position: absolute;
+    left: -12px;
+}
+
+.iso19115 li::before {
+    border-top: 1px solid #000;
+    top: 9px;
+    width: 8px;
+    height: 0;
+}
+
+.iso19115 li::after {
+    border-left: 1px solid #000;
+    height: 100%;
+    width: 0px;
+    top: 2px;
+}
+
+.iso19115 ul > li:last-child::after {
+    height: 8px;
+}
+
+.iso19115-head {
+    font-weight: bold;
+}

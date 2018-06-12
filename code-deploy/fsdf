@@ -1,0 +1,63 @@
+#!/bin/bash
+#
+# Note runlevel 2345, 86 is the Start order and 85 is the Stop order
+#
+# chkconfig: 2345 86 85
+# description: The FSDF app server. The server doesn't do much as most of the
+# content is served from the root of the Apache web server.
+#
+# Below is the source function library, leave it be
+. /etc/init.d/functions
+
+# We need environment variables for passwords and the likes
+. /home/ec2-user/.bash_profile
+
+
+FOREVER=/usr/bin/forever
+FSDF_SERVER_SCRIPT=/home/ec2-user/fsdf-elvis/server.js
+SERVICE_NAME=fsdf
+
+# options
+LOGFILE=/var/log/fsdf.log
+LOCKFILE=/var/lock/subsys/fsdf
+MIN_UPTIME=5000
+SPIN_SLEEP_TIME=2000
+
+
+start(){
+        $FOREVER \
+           -a \
+           --pidFile $LOCKFILE \
+           -l $LOGFILE \
+           --minUptime $MIN_UPTIME \
+           --spinSleepTime $SPIN_SLEEP_TIME \
+           start $FSDF_SERVER_SCRIPT
+}
+
+stop(){
+        $FOREVER stop $FSDF_SERVER_SCRIPT
+}
+
+restart(){
+         stop
+         start
+}
+
+case "$1" in
+        start)
+                echo "Start service SERVICE_NAME"
+                start
+                ;;
+        stop)
+                echo "Stop service SERVICE_NAME"
+                stop
+                ;;
+        restart)
+                echo "Restart service SERVICE_NAME"
+                restart
+                ;;
+        *)
+                echo "Usage: $0 {start|stop|restart}"
+                exit 1
+                ;;
+esac

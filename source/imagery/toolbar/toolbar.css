@@ -1,0 +1,73 @@
+/* Style the search bar to fit the toolbar */
+.input-group-custom > .form-control {
+   padding: .25rem .5rem;
+   line-height: 1.2;
+   border-radius: .2rem;
+   height: 30px;
+}
+
+.input-group-custom > .input-group-btn > .btn {
+   padding: 5.5px 12px;
+   line-height: 1.2;
+   border-radius: .2rem;
+}
+
+.elevation-toolbar {
+   position: fixed;
+   top: 82px;
+   background-color: #006983;
+   left: 0;
+   right: 0;
+   height: 30px;
+}
+
+.map-tool-toggle-btn {
+    background-color: #006983;
+    border: none;
+    height: 30px;
+}
+
+
+.toolBarContainer>div>ul {
+    list-style: none;
+}
+
+.toolBarContainer>div>ul {
+    list-style: none;
+}
+
+.left-toolbar-items {
+    float: left;
+    padding-left: 0;
+    margin-left: 10px;
+    margin-bottom: 0;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    height: 30px;
+    width: 25%;
+    white-space: nowrap;
+}
+
+.right-toolbar-items {
+  float: right;
+  padding-left: 0;
+  margin-left: 10px;
+  margin-bottom: 0;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  height: 30px;
+}
+
+.right-toolbar-items>div, .right-toolbar-items li {
+  display: inline;
+}
+
+.toolbarButton {
+  background-color: #006983;
+  border: none;
+  height: 30px;
+  font-size: 13px;
+}
+

@@ -1,0 +1,37 @@
+#!/bin/bash
+PROJECT_DIR=/home/ec2-user/fsdf-elvis
+HTTP_CONFIG_DIRECTORY=/etc/httpd/conf.d
+PROXY_FILE_NAME=proxies.conf
+FSDF_SERVER_FILE_NAME=fsdf
+PROXY_SOURCE=$PROJECT_DIR/code-deploy/$PROXY_FILE_NAME
+PROXY_CONFIG_TARGET=$HTTP_CONFIG_DIRECTORY/$PROXY_FILE_NAME
+FSDF_SERVICE_NAME=fsdf
+FSDF_SERVICE_TARGET=/etc/init.d/$FSDF_SERVICE_NAME
+FSDF_SERVICE_SOURCE=$PROJECT_DIR/code-deploy/fsdf
+
+sudo curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
+sudo yum -y install nodejs
+sudo yum install -y gcc-c++ make
+sudo yum install -y httpd24
+sudo yum install -y git
+sudo npm install -g forever
+sudo npm install -g bower
+git clone https://github.com/Tomella/fsdf-elvis.git
+cd fsdf-elvis
+npm install
+bower install
+
+# Sets up Apache HTTP service
+if [ ! -f "$PROXY_CONFIG_TARGET" ]; then
+   sudo cp "$PROXY_SOURCE" "$HTTP_CONFIG_DIRECTORY"
+fi
+sudo service httpd start
+sudo chkconfig httpd on
+
+# Creates a SYS5 service and autostarts it
+if [ ! -f "$FSDF_SERVICE_TARGET" ]; then
+   sudo cp $FSDF_SERVICE_SOURCE /etc/init.d
+   sudo chmod +x /etc/init.d/$FSDF_SERVICE_NAME
+   sudo service fsdf start
+   sudo chkconfig fsdf on
+fi

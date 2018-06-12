@@ -1,0 +1,342 @@
+{
+   "initiateServiceTemplates": {
+      "custom": {
+         "22be4b55-2465-4320-e053-10a3070a5236": {
+            "key": "state",
+            "templates": {
+               "NSW": "https://elvis-ga.fmecloud.com/fmejobsubmitter/fsdf_elvis_prod/DEMClipZipShip_Master_S3Source.fmw?geocat_number=${id}&out_grid_name=${filename}&input_coord_sys=LL-WGS84&ymin=${yMin}&ymax=${yMax}&xmin=${xMin}&xmax=${xMax}&output_format=${outFormat}&out_coord_sys=${outCoordSys}&email_address=${email}&opt_showresult=false&opt_servicemode=async"
+            }
+         }
+      },
+      "default": "https://elvis-ga.fmecloud.com/fmejobsubmitter/fsdf_elvis_prod/DEMClipZipShip_Master_S3Source.fmw?geocat_number=${id}&out_grid_name=${filename}&input_coord_sys=LL-WGS84&ymin=${yMin}&ymax=${yMax}&xmin=${xMin}&xmax=${xMax}&output_format=${outFormat}&out_coord_sys=${outCoordSys}&email_address=${email}&opt_showresult=false&opt_servicemode=async"
+   },
+   "outFormat": [
+      {
+         "code": "ESRIASCIIGRID",
+         "value": "Esri ASCII Grid",
+         "description": "An Esri ASCII grid is a raster GIS file format developed by Esri. The grid defines geographic space as an array of equally sized square grid points arranged in rows and columns. Each grid point stores a numeric value that represents elevation or surface slope for that unit of space. Each grid cell is referenced by its x,y coordinate location."
+      },
+      {
+         "code": "GEOTIFF",
+         "default": true,
+         "value": "Geo TIFF (Geo-referenced Tagged Image File Format)",
+         "description": "GeoTIFF is a public domain metadata standard which allows georeferencing information to be embedded within a TIFF file."
+      },
+      {
+         "code": "NGRID",
+         "value": "MapInfo Vertical Mapper Grid (NGrid)",
+         "description": "NGrid is a binary raster format with header information. For each raster, there is only a single feature returned, since this feature will contain the entire raster. A single feature is stored in a single file, with header information in an associated MapInfo TAB file."
+      }
+   ],
+   "outCoordSys": [
+      {
+         "code": "AUS-LM-CONIC",
+         "value": "Lambert Conformal Conic for Australia, WGS84"
+      },
+      {
+         "code": "EPSG:28348",
+         "value": "Map Grid of Australia Zone 48 (GDA 94)",
+         "extent": {
+            "xMax": 108,
+            "xMin": 102,
+            "yMax": -8,
+            "yMin": -56
+         }
+      },
+      {
+         "code": "EPSG:28349",
+         "value": "Map Grid of Australia Zone 49 (GDA 94)",
+         "extent": {
+            "xMax": 114,
+            "xMin": 108,
+            "yMax": -8,
+            "yMin": -56
+         }
+      },
+      {
+         "code": "EPSG:28350",
+         "value": "Map Grid of Australia Zone 50 (GDA 94)",
+         "extent": {
+            "xMax": 120,
+            "xMin": 114,
+            "yMax": -8,
+            "yMin": -56
+         }
+      },
+      {
+         "code": "EPSG:28351",
+         "value": "Map Grid of Australia Zone 51 (GDA 94)",
+         "extent": {
+            "xMax": 126,
+            "xMin": 120,
+            "yMax": -8,
+            "yMin": -56
+         }
+      },
+      {
+         "code": "EPSG:28352",
+         "value": "Map Grid of Australia Zone 52 (GDA 94)",
+         "extent": {
+            "xMax": 132,
+            "xMin": 126,
+            "yMax": -8,
+            "yMin": -56
+         }
+      },
+      {
+         "code": "EPSG:28353",
+         "value": "Map Grid of Australia Zone 53 (GDA 94)",
+         "extent": {
+            "xMax": 138,
+            "xMin": 132,
+            "yMax": -8,
+            "yMin": -56
+         }
+      },
+      {
+         "code": "EPSG:28354",
+         "value": "Map Grid of Australia Zone 54 (GDA 94)",
+         "extent": {
+            "xMax": 144,
+            "xMin": 138,
+            "yMax": -8,
+            "yMin": -56
+         }
+      },
+      {
+         "code": "EPSG:28355",
+         "value": "Map Grid of Australia Zone 55 (GDA 94)",
+         "extent": {
+            "xMax": 150,
+            "xMin": 144,
+            "yMax": -8,
+            "yMin": -56
+         }
+      },
+      {
+         "code": "EPSG:28356",
+         "value": "Map Grid of Australia Zone 56 (GDA 94)",
+         "extent": {
+            "xMax": 156,
+            "xMin": 150,
+            "yMax": -8,
+            "yMin": -56
+         }
+      },
+      {
+         "code": "EPSG:28357",
+         "value": "Map Grid of Australia Zone 57 (GDA 94)",
+         "extent": {
+            "xMax": 162,
+            "xMin": 156,
+            "yMax": -54.7,
+            "yMin": -54.8
+         }
+      },
+      {
+         "code": "EPSG:28358",
+         "value": "Map Grid of Australia Zone 58 (GDA 94)",
+         "extent": {
+            "xMax": 168,
+            "xMin": 162,
+            "yMax": -8,
+            "yMin": -56
+         }
+      },
+      {
+         "code": "GDA94.Geoscience/Lmbrt",
+         "value": "GDA94 / Geoscience Australia Lambert (EPSG:3112)",
+         "extent": {
+            "xMax": 155,
+            "xMin": 108,
+            "yMax": -10,
+            "yMin": -45
+         }
+      },
+      {
+         "code": "LL-GDA94",
+         "default": true,
+         "value": "Geodetic Datum of Australia 1994 (EPSG:4283)",
+         "extent": {
+            "xMax": 155,
+            "xMin": 108,
+            "yMax": -10,
+            "yMin": -45
+         }
+      },
+      {
+         "code": "LL-WGS84",
+         "value": "WGS84 Lat/Longs (EPSG:4326)"
+      }
+   ],
+   "processing": {
+      "extentCheckTemplates": {
+         "gcat_22be4b55-2465-4320-e053-10a3070a5236": "https://elvis-ga.fmecloud.com/fmedatastreaming/fsdf_elvis_prod/test5mIndexIntersect.fmw?MINX={minx}&MINY={miny}&MAXX={maxx}&MAXY={maxy}&DestDataset_JSON=F%3A%5Ctest5mIndexIntersect.json"
+      }
+   },
+   "datasets": [
+      {
+         "type": "dataset",
+         "title": "SRTM-derived 1 Second Digital Elevation Models Version 1.0",
+         "abstract": "The 1 second Shuttle Radar Topography Mission (SRTM) Digital Elevation Models Version 1.0 package comprises three surface models: the Digital Elevation Model (DEM; ANZCW0103013355), the Smoothed Digital Elevation Model (DEM-S; ANZCW0703014016) and the Hydrologically Enforced Digital Elevation Model (DEM-H; ANZCW0703014615). The DEMs were derived from the SRTM data acquired by NASA in February 2000 and were publicly released under Creative Commons licensing from November 2011 in ESRI Grid format. DEM represents ground surface topography, with vegetation features removed using an automatic process supported by several vegetation maps. This provides substantial improvements in the quality and consistency of the data relative to the original SRTM data, but is not free from artefacts. Man-made structures such as urban areas and power line towers have not been treated. The removal of vegetation effects has produced satisfactory results over most of the continent and areas with defects identified in supplementary layers distributed with the data, and described in the User Guide. DEM-S represents ground surface topography, excluding vegetation features, and has been smoothed to reduce noise and improve the representation of surface shape. An adaptive smoothing process applied more smoothing in flatter areas than hilly areas, and more smoothing in noisier areas than in less noisy areas. This DEM-S supports calculation of local terrain shape attributes such as slope, aspect and curvature that could not be reliably derived from the unsmoothed 1 second DEM because of noise. DEM-H is a hydrologically enforced version of the smoothed DEM-S. The DEM-H captures flow paths based on SRTM elevations and mapped stream lines, and supports delineation of catchments and related hydrological attributes. The dataset was derived from the 1 second smoothed Digital Elevation Model (DEM-S; ANZCW0703014016) by enforcing hydrological connectivity with the ANUDEM software, using selected AusHydro V1.6 (February 2010) 1:250,000 scale watercourse lines (ANZCW0503900101) and lines derived from DEM-S to define the watercourses. The drainage enforcement has produced a consistent representation of hydrological connectivity with some elevation artefacts resulting from the drainage enforcement. Further information can be found in the supplementary layers supplied with the data and in the User Guide.",
+         "systemCode": "gcat",
+         "sysId": "gcat_aac46307-fce8-449d-e044-00144fdd4fa6",
+         "primaryId": "aac46307-fce8-449d-e044-00144fdd4fa6",
+         "restrictSize": 2.25,
+         "showExtent": true,
+         "rights": [
+            "Commonwealth of Australia (Geoscience Australia) ; Creative Commons Attribution 4.0 International Licence"
+         ],
+         "keywords": [
+            "Web Service",
+            "topography",
+            "ECOLOGY Landscape",
+            "LAND Topography Models",
+            "Earth Sciences"
+         ],
+         "bbox": "113.0 -44.0 154.0 -10.0",
+         "bounds": {
+            "xMin": 113.0,
+            "yMin": -44.0,
+            "xMax": 154.0,
+            "yMax": -10.0
+         },
+         "pubDate": "1999-12-31T13:00:00Z",
+         "services": {
+            "wms": {
+               "layerNames": "Image",
+               "name": "Image",
+               "description": "Image",
+               "url": "http://services.ga.gov.au/gis/services/DEM_SRTM_1Second/MapServer/WMSServer"
+            },
+            "wcs": {
+               "name": "dem_s_1s_WCS",
+               "description": "dem_s_1s_WCS",
+               "url": "http://www.ga.gov.au/gisimg/services/topography/dem_s_1s/ImageServer/WCSServer"
+            }
+         },
+         "template": "https://elvis-ga.fmecloud.com/fmejobsubmitter/fsdf_elvis_prod/DEMClipZipShip_Master_S3Source.fmw?geocat_number=${id}&out_grid_name=${filename}&input_coord_sys=LL-WGS84&ymin=${yMin}&ymax=${yMax}&xmin=${xMin}&xmax=${xMax}&output_format=${outFormat}&out_coord_sys=${outCoordSys}&email_address=${email}&opt_showresult=false&opt_servicemode=async"
+      },
+      {
+         "type": "dataset",
+         "title": "DEM SRTM 1Second Hydrologically Enforced",
+         "abstract": "This Service represents the National Digital Elevation Model (DEM) 1 Second Hydrologically Enforced product, derived from the National DEM SRTM 1 Second and National Watercourses, lakes and Reservoirs. ",
+         "systemCode": "gcat",
+         "sysId": "gcat_a05f7893-0050-7506-e044-00144fdd4fa6",
+         "primaryId": "a05f7893-0050-7506-e044-00144fdd4fa6",
+         "restrictSize": 2.25,
+         "showExtent": true,
+         "rights": [
+            "Commonwealth of Australia (Geoscience Australia) ; Creative Commons Attribution 4.0 International Licence"
+         ],
+         "keywords": [
+            "Web Service",
+            "topography",
+            "ECOLOGY Landscape",
+            "LAND Topography Models",
+            "Earth Sciences"
+         ],
+         "bbox": "113.0 -44.0 154.0 -10.0",
+         "bounds": {
+            "xMin": 113.0,
+            "yMin": -44.0,
+            "xMax": 154.0,
+            "yMax": -10.0
+         },
+         "pubDate": "1999-12-31T13:00:00Z",
+         "services": {
+            "wms": {
+               "layerNames": "Image",
+               "name": "hydro_WMS",
+               "description": "hydro_WMS",
+               "url": "http://services.ga.gov.au/gis/services/DEM_SRTM_1Second_Hydro_Enforced/MapServer/WMSServer?request=GetCapabilities&amp;service=WMS"
+            },
+            "wcs": {
+               "name": "hydro_WCS",
+               "description": "hydro_WCS",
+               "url": "http://services.ga.gov.au/gis/services/DEM_SRTM_1Second_Hydro_Enforced/MapServer/WCSServer?request=GetCapabilities&amp;service=WCS&amp;version=1.0.0"
+            }
+         },
+         "template": "https://elvis-ga.fmecloud.com/fmejobsubmitter/fsdf_elvis_prod/DEMClipZipShip_Master_S3Source.fmw?geocat_number=${id}&out_grid_name=${filename}&input_coord_sys=LL-WGS84&ymin=${yMin}&ymax=${yMax}&xmin=${xMin}&xmax=${xMax}&output_format=${outFormat}&out_coord_sys=${outCoordSys}&email_address=${email}&opt_showresult=false&opt_servicemode=async"
+      },
+      {
+         "type": "dataset",
+         "title": "5 metre Digital Elevation Model (DEM)",
+         "abstract": "The Digital Elevation Model (DEM) 5 Metre Grid of Australia derived from LiDAR model represents a National 5 metre (bare earth) DEM which has been derived from some 236 individual LiDAR surveys between 2001 and 2015 covering an area in excess of 245,000 square kilometres.",
+         "systemCode": "gcat",
+         "showExtent": true,
+         "sysId": "gcat_22be4b55-2465-4320-e053-10a3070a5236",
+         "primaryId": "22be4b55-2465-4320-e053-10a3070a5236",
+         "restrictSize": 2.25,
+         "rights": [
+            "Commonwealth of Australia (Geoscience Australia) ; Creative Commons Attribution 4.0 International Licence"
+         ],
+         "keywords": [
+            "Web Service",
+            "topography",
+            "ECOLOGY Landscape",
+            "LAND Topography Models",
+            "Earth Sciences"
+         ],
+         "bbox": "113.760230 -45.949852 162.000033 -9.205568",
+         "bounds": {
+            "xMin": 113.760230,
+            "yMin": -45.949852,
+            "xMax": 162.000033,
+            "yMax": -9.205568
+         },
+         "pubDate": "1999-12-31T13:00:00Z",
+         "services": {
+            "wms": {
+               "layerNames": "Image",
+               "name": "SRTM 1' DEM WMS",
+               "description": "25 m DEM WMS",
+               "url": "http://services.ga.gov.au/gis/services/DEM_LiDAR_25m/MapServer/WMSServer"
+            }
+         },
+         "template": "https://elvis-ga.fmecloud.com/fmejobsubmitter/fsdf_elvis_prod/DEMClipZipShip_Master_S3Source.fmw?geocat_number=${id}&out_grid_name=${filename}&input_coord_sys=LL-WGS84&ymin=${yMin}&ymax=${yMax}&xmin=${xMin}&xmax=${xMax}&output_format=${outFormat}&out_coord_sys=${outCoordSys}&email_address=${email}&opt_showresult=false&opt_servicemode=async"
+      },
+      {
+         "type": "dataset",
+         "title": "25 metre Digital Elevation Model (DEM)",
+         "abstract": "The Digital Elevation Model (DEM) 25 Metre Grid of Australia derived from LiDAR model represents a National 25 metre (bare earth) DEM which has been derived from some 236 individual LiDAR surveys between 2001 and 2015 covering an area in excess of 245,000 square kilometres. These surveys cover Australia's populated coastal zone; floodplain surveys within the Murray Darling Basin, and individual surveys of major and minor population centres. All available 1 metre resolution LiDAR-derived DEMs have been compiled and resampled to 25 metre resolution datasets for each survey area, and then merged into a single dataset for each State. These State datasets have also been merged into a 1 second resolution national dataset.",
+         "systemCode": "gcat",
+         "sysId": "gcat_22be4b55-2485-4320-e053-10a3070a5236",
+         "primaryId": "22be4b55-2485-4320-e053-10a3070a5236",
+         "restrictSize": 2.25,
+         "showExtent": true,
+         "rights": [
+            "Commonwealth of Australia (Geoscience Australia) ; Creative Commons Attribution 4.0 International Licence"
+         ],
+         "keywords": [
+            "Web Service",
+            "topography",
+            "ECOLOGY Landscape",
+            "LAND Topography Models",
+            "Earth Sciences"
+         ],
+         "bbox": "113.0 -44.0 154.0 -9.0",
+         "bounds": {
+            "xMin": 113.0,
+            "yMin": -44.0,
+            "xMax": 154.0,
+            "yMax": -9.0
+         },
+         "pubDate": "1999-12-31T13:00:00Z",
+         "services": {
+            "wms": {
+               "layerNames": "Image",
+               "name": "Image",
+               "description": "25 m DEM WMS",
+               "url": "http://services.ga.gov.au/gis/services/DEM_LiDAR_25m/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+            },
+            "wcs": {
+               "name": "dem_s_1s_WCS",
+               "description": "dem_s_1s_WCS",
+               "url": "http://services.ga.gov.au/gis/services/DEM_LiDAR_25m/MapServer/WCSServer?request=GetCapabilities&amp;service=WCS&amp;version=1.0.0"
+            }
+         },
+         "template": "https://elvis-ga.fmecloud.com/fmejobsubmitter/fsdf_elvis_prod/DEMClipZipShip_Master_S3Source.fmw?geocat_number=${id}&out_grid_name=${filename}&input_coord_sys=LL-WGS84&ymin=${yMin}&ymax=${yMax}&xmin=${xMin}&xmax=${xMax}&output_format=${outFormat}&out_coord_sys=${outCoordSys}&email_address=${email}&opt_showresult=false&opt_servicemode=async"
+      }
+   ]
+}

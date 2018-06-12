@@ -1,0 +1,28 @@
+[
+	{
+		"index_poly_name":"56_324_6760",
+		"asc_name":"Ashford2011_3246760_56_0002_0002_5m.asc",
+		"asc_url":"https://s3-ap-southeast-2.amazonaws.com/lpi.elvis/lidar/Jobs/Z55/Ashford/ELL_DEM/Ashford2011_3246760_56_0002_0002_5m.asc",
+		"file_size_asc":"1269029",
+		"las_name":"Ashford2011-PHO3-C0-AHD_3246760_56_0002_0002.las",
+		"las_url":"https://s3-ap-southeast-2.amazonaws.com/lpi.elvis/lidar/Jobs/Z55/Ashford/AHD_LAS/Ashford2011-PHO3-C0-AHD_3246760_56_0002_0002.las",
+		"file_size_las":"656646989",
+		"prj_name":"Ashford2011_3246760_56_0002_0002_5m.prj",
+		"prj_url":"https://s3-ap-southeast-2.amazonaws.com/lpi.elvis/lidar/Jobs/Z55/Ashford/ELL_DEM/Ashford2011_3246760_56_0002_0002_5m.prj",
+		"file_size_prj":"425",
+		"bbox":"151.188330035855,-29.26,151.2,-29.25"
+	},
+	{
+		"index_poly_name":"56_324_6762",
+		"asc_name":"Ashford2011_3246762_56_0002_0002_5m.asc",
+		"asc_url":"https://s3-ap-southeast-2.amazonaws.com/lpi.elvis/lidar/Jobs/Z55/Ashford/ELL_DEM/Ashford2011_3246762_56_0002_0002_5m.asc",
+		"file_size_asc":"1269192",
+		"las_name":"Ashford2011-PHO3-C0-AHD_3246762_56_0002_0002.las",
+		"las_url":"https://s3-ap-southeast-2.amazonaws.com/lpi.elvis/lidar/Jobs/Z55/Ashford/AHD_LAS/Ashford2011-PHO3-C0-AHD_3246762_56_0002_0002.las",
+		"file_size_las":"620228397",
+		"prj_name":"Ashford2011_3246762_56_0002_0002_5m.prj",
+		"prj_url":"https://s3-ap-southeast-2.amazonaws.com/lpi.elvis/lidar/Jobs/Z55/Ashford/ELL_DEM/Ashford2011_3246762_56_0002_0002_5m.prj",
+		"file_size_prj":"425",
+		"bbox":"151.188648202221,-29.26,151.2,-29.25"
+	}
+]

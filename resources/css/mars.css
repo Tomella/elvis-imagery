@@ -1,0 +1,514 @@
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important;
+}
+
+.navbar-fixed-top {
+	z-index:0;
+}
+
+.applicationTitle {
+    display: inline-block;
+    font-size: large;
+    color: #2f2f2f;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.well {
+	padding:14px;
+}
+
+.ellipsis {
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+	font-size:12px;
+    margin: 0;
+    height:100%;
+    padding:0;
+    padding-top:70px;
+}
+
+html body {
+    height:100%;
+    position:relative;
+}
+
+img {
+	border:0 none;
+}
+
+a, a:active, a:hover, a:visited {
+	color:#333;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#777;
+}
+
+.mainContainer {
+	z-index:0;
+	height:100%;
+}
+
+.mainChild {
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	position: relative;
+}
+
+.mainHorizontal {
+	height: 100%;
+	width: 100%;
+	left: 0;
+	position: absolute;
+	z-index:0;
+}
+
+#content {
+	z-index:0;
+	overflow:hidden;
+}
+
+@media only screen and (max-height:786px) {
+	#container {
+		/* Need to do something here to make the map look pretty */
+	}
+}
+
+#header{
+    line-height:60px;
+    margin:0 auto;
+    width:100%;
+    text-align:center;
+}
+
+#header .helpLink {
+    top: 2px;
+}
+
+/* CSS for the content of page. I am giving top and bottom padding of 80px to make sure the header and footer do not overlap the content.*/
+#container {
+    /* background-color: #383838; */
+    bottom: 42px;
+    left: 0;
+	overflow:hidden;
+    position: fixed;
+    right: 0;
+    top: 79px;
+}
+
+.thumbNailContainer {
+	float:left;
+	padding-right:12px
+}
+
+.thumbNail {
+	/* background-color:white; */
+	border-radius:5px
+}
+
+.opacitySlider {
+	border-right: 5px solid	white;
+}
+
+.slider.slider-horizontal {
+	width:195px;
+}
+
+.interactionPanelHeader {
+	float:left;
+	max-width: 90%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#mapSection, #mapDiv {
+	position:"";
+	height:100%;
+	width:100%;
+}
+
+/* The splitter */
+#horizontal {
+   height: 100%;
+   margin: 0 auto;
+   border:0;
+}
+
+/* End of the splitter */
+
+
+.rotate {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -sand-transform: rotate(90deg);
+    transform-origin: bottom right;
+    display: block;
+}
+
+div.odd, table .odd {
+	background-color:#f5f5f5;
+}
+
+div.even, table .even {
+	background-color: white;
+}
+
+.featureLink, .featureLink:visited, .featureLink:active {
+	/* color:white; */
+	text-decoration:none;
+}
+
+.featureLink.active {
+	/* color:#EEa73E; */
+}
+
+/* Google search auto complete */
+
+.locAutoWidth {
+	width:330px;
+}
+
+.toolbar {
+	height: 34px;
+    width: 100%;
+}
+
+#baselayerCtrl {
+   width: 150px;
+   height: 15px;
+   margin: 0px auto;
+   padding: 0px 0 0 0px;
+}
+
+.footerUp {
+	background-color:#303030;
+	cursor:pointer;
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	height:7px;
+	z-index:2;
+}
+
+.topBorderDown {
+	background:url(../img/footer_down.png) no-repeat center top #333;
+	padding-top:8px;
+}
+
+
+.marsMessages {
+	padding:3px;
+	padding-left:5px;
+    display: block;
+    height: 28px;
+    left: 0;
+    position: fixed;
+    top: 81px;
+    z-index: 70;
+}
+
+.pale {
+	opacity:0.25;
+}
+
+.marsFlash {
+	position:fixed;
+	width:100%;
+	bottom:0px;
+	right:0px;
+	margin-right:30px;
+	margin-bottom:30px;
+	z-index:1000;
+}
+
+.marsFlash div {
+	float:right;
+	padding: 7px;
+}
+
+.marsFlash div span {
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border: 1px solid #555555;
+	padding: 4px;
+	color: #000000;
+	background-color : rgba(114, 199, 231, 0.9);
+}
+
+.assetViewer {
+	position:fixed;
+	top:112px;
+	left:0px;
+	right:100px;
+	margin-left:10px;
+	margin-bottom:7px;
+	z-index:1;
+	opacity:0.85;
+}
+
+.assetViewerItem {
+	float:left;
+	z-index:2;
+	margin-top: 3px;
+	position:relative;
+}
+
+.assetViewerItem.selected {
+	z-index:3;
+}
+
+.assetViewerItem.selected .titleBlock {
+	visibility:hidden;
+}
+
+.assetViewerItem > .titleBlock {
+	border-radius:4px;
+	border: 1px solid gray;
+	background-color:white;
+	padding:3px;
+	z-index:1;
+	margin-right:5px;
+	margin-top:5px;
+	display:inline-block;
+}
+
+.assetViewerDetails {
+	background-color:white;
+	position:absolute;
+	top:-6px;
+	left:-7px;
+	width:345px;
+	border-radius:4px;
+	border: 1px solid #00ABA9;
+	padding:3px;
+	margin-right:5px;
+	margin-top:5px;
+	display:inline-block;
+	clear:both;
+	z-index:3;
+}
+
+.legendContainer {
+	position:fixed;
+	top:100px;
+	left:44px;
+	width:300px;
+	min-height:450px;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+.degrees {
+	font-family: arial;
+	width:8em;
+}
+
+.fromToWindow {
+	padding:5px;
+	border:1px solid #333333;
+	border-top:0 none;
+}
+
+.featuresUnderPoint {
+	z-index:6;
+}
+
+.menu_mn_active_tt_active {
+	display: block;
+	width: 200px;
+	opacity: 1;
+	position: absolute;
+}
+
+.pathContent {
+	padding:9px;
+}
+.pathHeader {
+	min-height: 1em;
+	text-align:left;
+	padding-bottom:6px;
+}
+
+.fixedBottom {
+	position : fixed;
+	bottom:50px;
+	left:2px;
+	right:10px;
+	opacity : 0.95;
+	z-index:6;
+}
+
+.fixedBottom > img {
+	opacity:0.75;
+	width:100%;
+}
+
+.fixedBottom div.elevationPlot {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.fixedBottom .killMe {
+	position : absolute;
+	z-index:10;
+	top:10px;
+	right:10px;
+	opacity:0.8;
+}
+
+.marsfeatures {
+	background-color:white;
+	position:fixed;
+	left:20px;
+	z-index:10004;
+	text-align:left;
+	opacity:0.8;
+	border-collapse: separate;
+	border-radius:2px;
+	-moz-border-radius:1px;
+	border: 1px solid black;
+}
+
+#center-pane {
+	height:100%;
+}
+
+.marsfeatures.rightBottom {
+	-moz-box-shadow: 10px 10px 5px #888888;
+	-webkit-box-shadow: 10px 10px 5px #888888;
+	box-shadow: 10px 10px 5px #888888;
+}
+.marsfeatures.rightTop {
+	-moz-box-shadow: 10px -10px 5px #888888;
+	-webkit-box-shadow: 10px -10px 5px #888888;
+	box-shadow: 10px -10px 5px #888888;
+}
+.marsfeatures.leftBottom {
+	-moz-box-shadow: -10px 10px 5px #888888;
+	-webkit-box-shadow: -10px 10px 5px #888888;
+	box-shadow: -10px 10px 5px #888888;
+}
+.marsfeatures.leftTop {
+	-moz-box-shadow: -10px -10px 5px #888888;
+	-webkit-box-shadow: -10px -10px 5px #888888;
+	box-shadow: -10px -10px 5px #888888;
+}
+
+.toolbar-dropdown {
+	-moz-box-shadow: 2px 3px 5px #101010;
+	-webkit-box-shadow: 2px 3px 5px #101010;
+	box-shadow: 2px 3px 5px #101010;
+}
+
+.rfcSelectorList {
+	max-height:480px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+.printOnly {
+	display : none;
+}
+
+.pointInspector {
+	box-shadow: 3px 2px 14px #888888;
+	width: 21em;
+	position : absolute;
+	top: 115px;
+	right: 65px;
+	opacity: 0.9;
+}
+
+.pointInspector .exp-modal-content {
+	max-height : 500px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	padding:0px;
+}
+
+.pointInspector .pointContent {
+	padding:5px;
+	padding-bottom:14px;
+}
+
+.pointInspector .fa-map-marker {
+	color : #F2CC00;
+	font-size:120%;
+}
+
+.toolBarGroup .active i {
+	color:red;
+}
+
+
+.underlined {
+	border-bottom:1px solid lightgray;
+	padding-bottom:3px;
+}
+
+.modal-header {
+	padding:4px;
+	padding-left:10px;
+}
+
+.modal-title {
+	font-size:100%;
+}
+
+.modal-title.splash {
+	font-size:130%;
+}
+
+.panel-heading {
+	padding:5px 15px;
+}
+
+.panel-body {
+	padding:6px;
+}
+
+i.textMarker {
+	color :white;
+	font-size:120%;
+}
+
+.elevationContainer button.btn {
+    padding: 0px 6px;
+}
+
+.graph-brand {
+    float: left;
+    font-size: 16px;
+    height: 22px;
+    line-height: 18px;
+    padding: 1px;
+}
+
+/* Bootstrap helpers */
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}

@@ -1,0 +1,37 @@
+[
+	{
+		"key" : "faq2",
+		"question" : "Which data can I download as a public user (non-government)?",
+		"answer" : "All users of this portal can order the 5m DEM, 25m DEM, 1 second (DEM, DEM-S, DEM-H), 3 second (DSM, DEM, DEM-S), and 9 second (DSM, DEM, DEM-S) elevation data which are licensed under Creative Commons. Please note that you may be able to acquire restricted data directly from the custodian (nb. a fee may be incurred). Please refer to the metadata for custodian contact details."
+	},
+	{
+		"key" : "faq5",
+		"question" : "How much data can I download for free?",
+		"answer" : "Users can download order for free. If users want to clip areas this are limited to about 4 degree by 4 degree areas for the 1 Second DEM and about 2 degree by 2 degree for the 5 DEM these orders are also free. There is no limit to the number of orders you can submit."
+	},
+	{
+		"key" : "faq6",
+		"question" : "Can I order more data than 2 Degree by 2 Degree?",
+		"answer" : "Yes, orders for larger extents of 2 degree by 2 degree can be ordered through Elevation@ga.gov.au. There is usually a time delay of 5 working days to receive orders."
+	},
+	{
+		"key" : "faq7",
+		"question" : "How do I find out more about the data?",
+		"answer" : "In the list - click on the <i class='fa fa-caret-down'></i> to see more information about the data or click on the heading to open a page with the full metadata"
+	},
+	{
+		"key" : "faq8",
+		"question" : "What data is available for Australia?",
+		"answer" : "National coverage is available at 1 second (~30m), 3 second (~90m) and 9 second (~250m) resolution. The 1 second products are derived from the Shuttle Radar Topography Mission (SRTM) data and include a cleaned digital surface model (DSM), a bare-earth digital elevation model (DEM), a smoothed digital elevation model (DEM-S) and a hydrologically enforced digital elevation model (DEM-H). The 3 second products were derived from the 1 second data and include a DSM, DEM and DEM-S. The 9 second data was derived from the national GEODATA-250K topographic source data."
+	},
+	{
+		"key" : "faq9",
+		"question" : "Can I purchase elevation data?",
+		"answer" : "Yes. We have some standard products available and can also fill custom data requests. Non-government users can order the 5m DEM, 25m DEM, 1 second (DEM,DEM-S,DEM-H), 3 second (DSM,DEM,DEM-S) and 9 second (DSM,DEM,DEM-S) elevation data which are licensed under Creative Commons. Government users have full access to portal data (1m Data and Point Clouds). To purchase standard products contact the Sales Centre on 1800 800 173. For custom requests or enquiries email elevation@ga.gov.au."
+	},
+	{
+		"key" : "faq10",
+		"question" : "How do I use the search function?",
+		"answer" : "Start typing in the filter field. Up to the best fifty matches will be shown as you type with those that best match your criteria at the top of the list. The results are restricted to you map's field of view so zooming the map in or out will change the number of results."
+	}
+]

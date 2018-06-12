@@ -1,0 +1,16 @@
+{
+   "Point Clouds": {
+      "label": "Point Cloud",
+      "description": "Binary 3-dimensional point cloud data",
+      "match": {
+         "Point Clouds": true
+      }
+   },
+   "DEMs": {
+      "label": "DEM",
+      "description": "Digital Elevation Model",
+      "match": {
+         "DEMs": true
+      }
+   }
+}

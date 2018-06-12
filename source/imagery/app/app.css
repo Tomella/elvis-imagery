@@ -1,0 +1,222 @@
+/* Overrides */
+img.logo {
+	width: 218px;
+}
+/* End overrides */
+
+.marsFlash {
+	font-size:120%;
+}
+
+.marsMessages div.alert {
+	font-size:120%;
+	font-weight:bold;
+}
+.lgaContainer {
+	border-left: 1px solid lightgray;
+	border-right: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
+	background-color: white;
+}
+.elevationFixedBottom {
+  position: fixed;
+  bottom: 10px;
+  left: 6px;
+  right: 15px;
+  opacity: 0.95;
+  z-index: 6;
+}
+
+.toggle-switch .switch-left {
+	background : #337ab7;
+}
+
+.custom-checkbox {
+	position: relative;
+	display: inline-block;
+	padding-top:5px;
+}
+
+.helpTooltip {
+	left:100px;
+}
+
+.custom-checkbox>.box {
+	position: relative;
+	display: block;
+	width: 14px;
+	height: 14px;
+	border: 1px solid #ccc;
+	background-color: #eee;
+	border-radius: 4px;
+}
+
+.custom-checkbox>.box>.tick {
+	position: absolute;
+	left: 2px;
+	top: -2px;
+	width: 14px;
+	height: 6px;
+	border-bottom: 2px solid #333;
+	border-left: 2px solid #333;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	display: none;
+}
+
+.oldie .custom-checkbox>.box>.tick {
+	left: 1px;
+	top: -5px;
+	zoom: 1;
+}
+
+.custom-checkbox>input:checked+.box>.tick {
+	display: block;
+}
+
+.custom-checkbox.checked>.box>.tick {
+	display: block;
+}
+
+.custom-checkbox>input {
+	position: absolute;
+	outline: none;
+	left: 0;
+	top: 0;
+	padding: 0;
+	width: 16px;
+	height: 16px;
+	border: none;
+	margin: 0;
+	opacity: 0;
+	z-index: 1;
+}
+
+.custom-checkbox>input:active+.box {
+	border-color: #aaa;
+	background-color: #ddd;
+}
+
+.contentContainer {
+	position : fixed;
+	top : 112px;
+	bottom : 8px;
+	left:0px;
+	right:0px;
+}
+
+.mapContainer {
+	width:100%;
+	height:100%;
+}
+
+.bold {
+	font-weight:bold;
+}
+
+.expToolbar {
+	height: 32px;
+	position: absolute;
+	left: 91px;
+	right:40px;
+	top: 10px;
+	z-index: 1;
+}
+
+.leaflet-legend {
+	position: fixed;
+	left: 37px;
+	top: 126px;
+	max-height : 600px;
+	overflow-y : auto;
+	overflow-x : hidden;
+	box-shadow: 1px 1px 1px gray;
+	border-radius: 4px;
+	border: 3px solid white;
+}
+
+
+@media only screen and (max-height:786px) {
+	.leaflet-legend {
+		max-height:350px;
+	}
+}
+
+
+@media (max-width: 995px) {
+	.leaflet-zoom-box-control, .icsmTabs {
+		display: none;
+	}
+	.container-full button.navbar-toggle {
+		display:none;
+	}
+}
+
+.leaflet-legend img {
+	border : 3px solid white;
+}
+
+.icsmDaterange .slider {
+	width:100%;
+}
+
+.icsmDownloadModal {
+	position : absolute;
+	top : 0;
+	left:0;
+	right:0;
+	bottom:0;
+	min-height:120px;
+	max-height:100%;
+	overflow-y:auto;
+	z-index:50;
+}
+
+.exp-backdrop {
+	position:absolute;
+}
+
+.downloadAbstract {
+	max-height: 500px;
+	overflow-y:auto;
+}
+
+@media only screen and (max-height:786px) {
+	.downloadAbstract {
+		max-height: 350px;
+	}
+}
+
+input.ng-invalid.ng-touched {
+    background-color: #FFFCFC;
+}
+
+input.ng-valid.ng-touched {
+   background-color: white;
+}
+
+/* Overrides */
+.footerAccessibilityItem {
+	display:none!important;
+}
+
+.elevationContainer {
+   border: 1px solid gray;
+}
+
+body {
+   overflow-y: hidden;
+}
+
+.fa-lg {
+   font-size: 1.6666666em;
+   line-height: .85em;
+   vertical-align: -15%;
+}
+
+.ed-wms-button {
+   display:none;
+}

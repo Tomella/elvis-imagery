@@ -1,0 +1,304 @@
+{
+   "map":{
+   	  "name" : "main",
+      "options":{
+      	 "maxBounds" : [[-47, 107],[-9, 156]],
+         "center":[-28, 135],
+         "minZoom":4,
+         "zoom":5
+      },
+      "position":{
+         "bounds":[
+            [-44, 117],
+            [-12, 146]
+         ],
+         "minZoom":13
+      },
+      "layers":[
+         {
+            "name":"Google Hybrid",
+            "type":"Google",
+            "parameters":["HYBRID"],
+            "defaultLayer":true,
+            "isBaselayer":true,
+            "visible":true
+         },
+         {
+            "name":"Australian Topography",
+            "pseudoBaseLayer" : true,
+            "legendUrl": "icsm/resources/img/NationalLegend.png",
+            "type":"TileLayer",
+            "key":"topography",
+            "parameters":[
+            	"http://www.ga.gov.au/gisimg/rest/services/topography/National_Map_Colour_Basemap/MapServer/tile/{z}/{y}/{x}",
+            	{
+            		"minZoom" : 5,
+            		"maxZoom" : 17
+            	}],
+            "addLayerControl":false,
+            "visible":true
+         },
+         {
+         	"description" : "placeholder for layers above the topography",
+         	"name" : "Map Layers",
+         	"type" : "LayerGroup",
+         	"layers": []
+         },
+         {
+         	"description" : "placeholder for layers above the map layers",
+         	"name" : "Search Layers",
+         	"type" : "LayerGroup",
+         	"layers": []
+         },
+         {
+         	"description" : "placeholder for layers above the search layers",
+         	"name" : "Download Layers",
+         	"type" : "LayerGroup",
+         	"layers": []
+         }
+      ],
+      "drawOptions" : {
+      	 "draw" : {
+      		"polygon" : false,
+      		"circle" : false,
+      		"marker" : false,
+      		"rectangle" : false
+      	 },
+      	 "edit" : false
+      }
+   },
+   "initiateServiceTemplate" : "https://demo-ga.fmecloud.com/fmejobsubmitter/ElvIS_PROD/DEMClipZipShip_Master_S3Source.fmw?geocat_number=${id}&input_coord_sys=LL-WGS84&ymin=${yMin}&ymax=${yMax}&xmin=${xMin}&xmax=${xMax}&output_format=${outFormat}&out_coord_sys=${outCoordSys}&email_address=${email}&opt_showresult=false&opt_servicemode=async",
+   "layersTab" : {
+   		"group" : "Elevation",
+   		"title" : "Layers",
+   		"layers" : [
+   			{
+                "name":"SRTM 1 sec DEM image",
+                "help" : "Best viewed at national to state level of zoom.",
+                "metadata" : "https://ecat.ga.gov.au/geonetwork/srv/eng/search#!7639a737-b2b4-4b2d-9754-9013ca4a6805/dem_1s_WMS",
+                "pseudoBaseLayer" : true,
+                "type":["TileLayer", "WMS"],
+                "key":"gravity",
+                "parameters":[
+                    "http://www.ga.gov.au/gisimg/services/topography/dem_s_1s/ImageServer/WMSServer",
+                    {
+                       "layers" : "dem_s_1s",
+                       "format" : "image/png",
+                       "transparent" : true,
+                       "opacity" : 0.5
+                    }
+                ],
+                "addLayerControl":false,
+                "visible":true
+            },
+   			{
+                "name":"Flow grid direction image",
+                "help" : "Best viewed at state to local area zoom levels.",
+                "metadata" : "http://www.ga.gov.au/thredds/wms/national_grids/d8-9s.nc?request=GetCapabilities&service=WMS",
+                "pseudoBaseLayer" : true,
+                "type":["TileLayer", "WMS"],
+                "key":"gravity",
+                "parameters":[
+                    "http://www.ga.gov.au/thredds/wms/national_grids/d8-9s.nc",
+                    {
+                       "layers" : "Flow_Direction_Grid_to_accompany_9_Second_Digital_Elevation_Model_of_Australia_Version_3",
+                       "format" : "image/png",
+                       "transparent" : true,
+                       "opacity" : 0.5
+                    }
+                ],
+                "addLayerControl":false,
+                "visible":true
+            },
+   			{
+                "name":"Elevation contours",
+                "help" : "Detail improves as you zoom into an area but disappears when zoomed to tightly",
+                "metadata" : "http://www.ga.gov.au/gis/rest/services/topography/Dynamic_National_Map_Elevation_Relief_and_Physiography/MapServer",
+                "pseudoBaseLayer" : true,
+                "type":["TileLayer", "WMS"],
+                "key":"gravity",
+                "parameters":[
+                    "http://www.ga.gov.au/gis/services/topography/Dynamic_National_Map_Elevation_Relief_and_Physiography/MapServer/WMSServer",
+                    {
+                       "layers" : "Contours_Labels,Contours_250K_Scale,Contours_2_5Million_Scale,No_Data",
+                       "format" : "image/png",
+                       "transparent" : true
+                    }
+                ],
+                "addLayerControl":false,
+                "visible":true
+            },
+   			{
+                "name":"Spot elevations",
+                "help" : "Detail improves as you zoom into an area but disappears when zoomed to tightly",
+                "metadata" : "http://www.ga.gov.au/gis/rest/services/topography/Dynamic_National_Map_Elevation_Relief_and_Physiography/MapServer",
+                "pseudoBaseLayer" : true,
+                "type":["TileLayer", "WMS"],
+                "key":"gravity",
+                "parameters":[
+                    "http://www.ga.gov.au/gis/services/topography/Dynamic_National_Map_Elevation_Relief_and_Physiography/MapServer/WMSServer",
+                    {
+                       "layers" : "Spot_Elevations_Labels,Spot_Elevations_250K_Scale,Spot_Elevations_2_5Million_Scale",
+                       "format" : "image/png",
+                       "transparent" : true
+                    }
+                ],
+                "addLayerControl":false,
+                "visible":true
+            }
+   		]
+   },
+   	"facets" :{
+		"defaultKeywords" : [
+			{
+				"keyword" : "ECOLOGY Landscape",
+				"name" : "ECOLOGY Landscape",
+				"description" : "ECOLOGY Landscape",
+                "default" : true,
+                "hide" : true
+			},
+			{
+				"keyword" : "LAND Topography Models",
+				"name" : "LAND Topography Models",
+				"description" : "LAND Topography Models",
+				"info":"",
+                "default" : true,
+                "hide" : true
+			}
+		],
+		"keywordMappedDescription" :"The entries look the same as the default keywords but there but doesn't need the default attribute or at least it should be false",
+		"keywordMapped": []
+	},
+
+	"processing": {
+		"outFormat" : [
+			{
+				"code":"ESRIASCIIGRID",
+				"value" : "Esri ASCII Grid",
+				"description" : "An Esri ASCII grid is a raster GIS file format developed by Esri. The grid defines geographic space as an array of equally sized square grid points arranged in rows and columns. Each grid point stores a numeric value that represents elevation or surface slope for that unit of space. Each grid cell is referenced by its x,y coordinate location."
+			},
+			{
+				"code":"GEOTIFF",
+				"value" : "Geo TIFF (Geo-referenced Tageed Image File Format)",
+				"description" : "GeoTIFF is a public domain metadata standard which allows georeferencing information to be embedded within a TIFF file."},
+			{
+				"code":"NETCDF",
+				"value" : "NetCDF (Network Common Data Form",
+				"description" : "NetCDF is a set of software libraries and self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data."
+			},
+			{
+				"code":"NGRID",
+				"value" : "MapInfo Vertical Mapper Grid (NGrid)",
+				"description" : "NGrid is a binary raster format with header information. For each raster, there is only a single feature returned, since this feature will contain the entire raster. A single feature is stored in a single file, with header information in an associated MapInfo TAB file."
+			}
+		],
+		"outCoordSys" : [
+			{"code":"AUS-LM-CONIC", "value" : "Lambert Conformal Conic for Australia, WGS84 datum, Meter"},
+			{"code":"EPSG:28348", "value" : "Map Grid of Australia Zone 48 (GDA 94) [MGA94-48]",
+				"extent" : {
+					"xMax" : 108,
+					"xMin" : 102,
+					"yMax" : -8,
+					"yMin" : -56
+				}
+			},
+			{"code":"EPSG:28349", "value" : "Map Grid of Australia Zone 49 (GDA 94) [MGA94-49]",
+				"extent" : {
+					"xMax" : 114,
+					"xMin" : 108,
+					"yMax" : -8,
+					"yMin" : -56
+				}
+			},
+			{"code":"EPSG:28350", "value" : "Map Grid of Australia Zone 50 (GDA 94) [MGA94-50]",
+				"extent" : {
+					"xMax" : 120,
+					"xMin" : 114,
+					"yMax" : -8,
+					"yMin" : -56
+				}
+			},
+			{"code":"EPSG:28351", "value" : "Map Grid of Australia Zone 51 (GDA 94) [MGA94-51]",
+				"extent" : {
+					"xMax" : 126,
+					"xMin" : 120,
+					"yMax" : -8,
+					"yMin" : -56
+				}
+			},
+			{"code":"EPSG:28352", "value" : "Map Grid of Australia Zone 52 (GDA 94) [MGA94-52]",
+				"extent" : {
+					"xMax" : 132,
+					"xMin" : 126,
+					"yMax" : -8,
+					"yMin" : -56
+				}
+			},
+			{"code":"EPSG:28353", "value" : "Map Grid of Australia Zone 53 (GDA 94) [MGA94-53]",
+				"extent" : {
+					"xMax" : 138,
+					"xMin" : 132,
+					"yMax" : -8,
+					"yMin" : -56
+				}
+			},
+			{"code":"EPSG:28354", "value" : "Map Grid of Australia Zone 54 (GDA 94) [MGA94-54]",
+				"extent" : {
+					"xMax" : 144,
+					"xMin" : 138,
+					"yMax" : -8,
+					"yMin" : -56
+				}
+			},
+			{"code":"EPSG:28355", "value" : "Map Grid of Australia Zone 55 (GDA 94) [MGA94-55]",
+				"extent" : {
+					"xMax" : 150,
+					"xMin" : 144,
+					"yMax" : -8,
+					"yMin" : -56
+				}
+			},
+			{"code":"EPSG:28356", "value" : "Map Grid of Australia Zone 56 (GDA 94) [MGA94-56]",
+				"extent" : {
+					"xMax" : 156,
+					"xMin" : 150,
+					"yMax" : -8,
+					"yMin" : -56
+				}
+			},
+			{"code":"EPSG:28357", "value" : "Map Grid of Australia Zone 57 (GDA 94) [MGA94-57]",
+				"extent" : {
+					"xMax" : 162,
+					"xMin" : 156,
+					"yMax" : -54.7,
+					"yMin" : -54.8
+				}
+			},
+			{"code":"EPSG:28358", "value" : "Map Grid of Australia Zone 58 (GDA 94) [MGA94-58]",
+				"extent" : {
+					"xMax" : 168,
+					"xMin" : 162,
+					"yMax" : -8,
+					"yMin" : -56
+				}
+			},
+			{"code":"GDA94.Geoscience/Lmbrt", "value" : "GDA94 / Geoscience Australia Lambert [EPSG #3112]",
+				"extent" : {
+					"xMax" : 155,
+					"xMin" : 108,
+					"yMax" : -10,
+					"yMin" : -45
+				}
+			},
+			{"code":"LL-GDA94", "value" : "Geodetic Datum of Australia 1994, Latitude-Longitude; Degrees [EPSG #4283]",
+				"extent" : {
+					"xMax" : 155,
+					"xMin" : 108,
+					"yMax" : -10,
+					"yMin" : -45
+				}
+			},
+			{"code":"LL-WGS84", "value" : "WGS84 Lat/Longs [EPSG #4326]"}
+		]
+	}
+}

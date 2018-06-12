@@ -1,0 +1,58 @@
+{
+   "ACT Government": {
+      "code": "act",
+      "image": "icsm/resources/img/logo-ACT.jpg",
+      "height": 42,
+      "showText": false
+   },
+
+   "Geoscience Australia": {
+      "code": "ga",
+      "image": "icsm/resources/img/Geoscience Australia.jpg",
+      "height": 42,
+      "showText": false
+   },
+
+   "NSW Government": {
+      "code": "lpi",
+      "image": "icsm/resources/img/NSW.jpg",
+      "height": 42,
+      "ccLicence": 3,
+      "showText": false
+   },
+
+   "QLD Government": {
+      "code": "qld",
+      "image": "icsm/resources/img/Qld.gif",
+      "height": 42,
+      "showText": false
+   },
+
+   "NT Government": {
+      "code": "nt",
+      "image": "icsm/resources/img/logo-NT.jpg",
+      "height": 42,
+      "showText": false
+   },
+
+   "SA Government": {
+      "code": "sa",
+      "image": "icsm/resources/img/logo-SA.png",
+      "height": 42,
+      "showText": false
+   },
+
+   "TAS Government": {
+      "code": "tas",
+      "image": "icsm/resources/img/logo-Tas.jpg",
+      "height": 42,
+      "showText": false
+   },
+
+   "WA Government": {
+      "code": "wa",
+      "image": "icsm/resources/img/logo-WA.jpg",
+      "height": 42,
+      "showText": false
+   }
+}
