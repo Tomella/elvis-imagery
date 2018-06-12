@@ -1,37 +1,54 @@
 <div class="container-full common-header" style="padding-right:10px; padding-left:10px">
-    <div class="navbar-header">
+   <div class="navbar-header">
 
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ga-header-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ga-header-collapse">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+      </button>
 
-        <a href="/" class="appTitle visible-xs">
-            <h1 style="font-size:120%">{{heading}}</h1>
-        </a>
-    </div>
-    <div class="navbar-collapse collapse ga-header-collapse">
-        <ul class="nav navbar-nav">
-            <li class="hidden-xs"><a href="/"><h1 class="applicationTitle">{{heading}}</h1></a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right nav-icons">
-        	<li common-navigation role="menuitem" current="current" style="padding-right:10px"></li>
-			<li mars-version-display role="menuitem"></li>
-			<li style="width:10px"></li>
-        </ul>
-    </div><!--/.nav-collapse -->
+      <a href="/" class="appTitle visible-xs">
+         <h1 style="font-size:120%">{{heading}}</h1>
+      </a>
+   </div>
+   <div class="navbar-collapse collapse ga-header-collapse">
+      <ul class="nav navbar-nav">
+         <li class="hidden-xs">
+            <a href="/">
+               <h1 class="applicationTitle">{{heading}}</h1>
+            </a>
+         </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right nav-icons">
+
+         <li role="menuitem" style="padding-right:10px;position: relative;top: -3px;">
+            <span class="altthemes-container">
+               <span>
+                  <a title="Location INformation Knowledge platform (LINK)" href="http://fsdf.org.au/" target="_blank">
+                     <img alt="FSDF" src="icsm/resources/img/FSDFimagev4.0.png" style="height: 66px">
+                  </a>
+               </span>
+            </span>
+         </li>
+         <li common-navigation role="menuitem" current="current" style="padding-right:10px"></li>
+         <li mars-version-display role="menuitem"></li>
+         <li style="width:10px"></li>
+      </ul>
+   </div>
+   <!--/.nav-collapse -->
 </div>
-
+<div class="contributorsLink" style="position: absolute; right:7px; bottom:15px">
+      <icsm-contributors-link></icsm-contributors-link>
+</div>
 <!-- Strap -->
 <div class="row">
-    <div class="col-md-12">
-        <div class="strap-blue">
-        </div>
-        <div class="strap-white">
-        </div>
-        <div class="strap-red">
-        </div>
-    </div>
+   <div class="col-md-12">
+      <div class="strap-blue">
+      </div>
+      <div class="strap-white">
+      </div>
+      <div class="strap-red">
+      </div>
+   </div>
 </div>

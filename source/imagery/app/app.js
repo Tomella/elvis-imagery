@@ -31,6 +31,7 @@
 		'geo.maphelper',
       'geo.measure',
 
+      'icsm.contributors',
       'icsm.side-panel',
 
       'imagery.download',

@@ -87,6 +87,10 @@
 .common-header {
   background-color: white;
 }
+
+img.elvis-logo {
+  height: 75px;
+}
 .iso19115,
 .iso19115 ul,
 .iso19115 li {
@@ -519,12 +523,6 @@ div.leaflet-control-scale-line {
     display: none;
   }
 }
-.baselayer-slider {
-  position: absolute;
-  right: 20px;
-  top: 10px;
-  z-index: 3;
-}
 /* Overrides */
 
 img.logo {
@@ -751,6 +749,76 @@ body {
 
 .ed-wms-button {
   display: none;
+}
+.contributors {
+  margin: 2px;
+  padding: 10px;
+  padding-left: 8px;
+  position: fixed;
+  top: 70px;
+  right: 1px;
+  opacity: 0.95;
+  z-index: 1200;
+  background-color: white;
+  white-space: nowrap;
+  text-align: center;
+  -webkit-transition: height 1s;
+  /* Safari */
+  transition: height 1s;
+}
+
+.contributors img {
+  -webkit-transition: height 1s;
+  /* Safari */
+  transition: height 1s;
+}
+
+.contributors.transitioned-up img {
+  height: 0;
+}
+
+.contributors.transitioned-up .contributors-unstick {
+  display: none;
+}
+
+.contributors.transitioned-down {
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.transitioned-up {
+  height: 0px;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+
+.contributors.transitioned-up a {
+  height: 0px;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.contributors-unstick {
+  vertical-align: top;
+  font-weight: bold;
+}
+
+.contributors-link {
+  font-weight: bold;
+}
+
+.elevation-and-depth {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.baselayer-slider {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  z-index: 3;
 }
 .common-baselayer-control {
   width: 210px;
