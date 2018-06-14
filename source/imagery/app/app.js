@@ -34,10 +34,12 @@
       'icsm.contributors',
       'icsm.side-panel',
 
+      'imagery.clip',
       'imagery.download',
       'imagery.panes',
       'imagery.templates',
       'imagery.toolbar',
+      'imagery.view',
 
       'ui.bootstrap',
       'ui.bootstrap-slider',

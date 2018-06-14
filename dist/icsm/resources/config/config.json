@@ -56,23 +56,6 @@
             "visible":true
          },
          {
-            "name":"NSW Topography",
-            "pseudoBaseLayer" : true,
-            "type":["TileLayer"],
-            "key":"nswTopo",
-            "parameters":[
-               "http://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Base_Map/MapServer/tile/{z}/{y}/{x}",
-               {
-                  "format" : "image/png",
-                  "transparent" : true,
-                  "opacity" : 0.7,
-                  "switch": "nswTopo"
-               }
-            ],
-            "addLayerControl":false,
-            "visible":true
-         },
-         {
          	"description" : "placeholder for layers above the topography",
          	"name" : "ELVIS - Foundation Spatial Data Map Layers",
          	"type" : "LayerGroup",

@@ -1,0 +1,25 @@
+<div class="well well-sm" style="margin-bottom:5px">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12" style="padding:0">
+				<div class="" role="group" aria-label="...">
+					<button ng-click="initiateDraw()" ng-disable="client.drawing"
+                      tooltip-append-to-body="true" tooltip-placement="bottom" uib-tooltip="Enable drawing of a bounding box. On enabling, click on the map and drag diagonally"
+						class="btn btn-primary btn-default">Select an area...</button>
+					<button ng-click="showInfo = !showInfo" tooltip-placement="bottom" uib-tooltip="Information." style="float:right" class="btn btn-primary btn-default"><i class="fa fa-info"></i></button>
+				</div>
+				<exp-info title="Selecting an area" show-close="true" style="width:450px;position:fixed;top:200px;right:40px" is-open="showInfo">
+					<icsm-info-bbox></icsm-info-bbox>
+            </exp-info>
+            <div class="row" ng-hide="(!clip.xMin && clip.xMin !== 0) || oversize" style="padding-top:7px;">
+               <div class="col-md-12 ng-binding">
+                  Selected bounds: {{clip.xMin | number : 4}}° west,
+                     {{clip.yMax | number : 4}}° north,
+                     {{clip.xMax | number : 4}}° east,
+                     {{clip.yMin | number : 4}}° south
+               </div>
+            </div>
+			</div>
+		</div>
+	</div>
+</div>

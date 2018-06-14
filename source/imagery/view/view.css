@@ -1,0 +1,16 @@
+.downloadPane {
+   padding-left:0px !important;
+   padding-right:5px !important;
+   position: absolute;
+   left:0;
+   right:0;
+   top:0;
+   bottom:10px;
+   overflow: hidden;
+}
+
+.downloadCont {
+   position: fixed;
+   right:0;
+   bottom:8px;
+}
